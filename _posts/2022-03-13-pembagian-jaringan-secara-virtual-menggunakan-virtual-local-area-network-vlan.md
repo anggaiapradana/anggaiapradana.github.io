@@ -187,7 +187,7 @@ Proses kerja VLAN dapat diuraikan sebagai berikut:
 
    - Batasan Jumlah VLAN pada Cisco ISL
 
-     Sebelumnya, Cisco ISL memiliki batas 1005 VLAN dalam satu jaringan fisik.
+     Sebelumnya, Cisco ISL memiliki batas 1024 VLAN dalam satu jaringan fisik.
 
 Perbedaan utama antara keduanya adalah bahwa Dot1Q adalah standar yang diakui secara internasional dan kompatibel dengan berbagai perangkat, sedangkan Cisco ISL khusus digunakan dalam perangkat Cisco dan tidak kompatibel dengan perangkat dari vendor lain.
 
@@ -235,4 +235,4 @@ Berikut adalah beberapa langkah umum untuk troubleshooting VLAN trunking
 
 3. Gunakan perintah show
 
-   Perintah show dapat digunakan untuk memeriksa status trunking pada switch.
+   Perintah show dapat digunakan untuk memeriksa status trunking pada switch dan keanggotaan.
