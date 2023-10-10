@@ -234,7 +234,7 @@ PC1-a, PC1-b
 
 ![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/11.png){: .normal }
 
-#### Langkah ke-14: hubungkan dengan Switch
+#### Langkah ke-14: [PC] hubungkan dengan Switch
 
 ![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/12.png){: .normal }
 
