@@ -138,9 +138,9 @@ SwServer(config)#
 #### Langkah ke-3: [SwServer] aktivasi VTP
 
 ```console
+SwServer(config)#vtp mode server
 SwServer(config)#vtp domain stemsagonet
 SwServer(config)#vtp password rahasia
-SwServer(config)#vtp mode server
 SwServer(config)#
 ```
 
@@ -186,9 +186,9 @@ SwClient(config)#
 #### Langkah ke-9: [SwClient] aktivasi VTP
 
 ```console
+SwClient(config)#vtp mode client
 SwClient(config)#vtp domain stemsagonet
 SwClient(config)#vtp password rahasia
-SwClient(config)#vtp mode client
 SwClient(config)#
 ```
 
@@ -351,9 +351,9 @@ SwClient2(config)#
 #### Langkah ke-6: [SwClient2] aktivasi VTP
 
 ```console
+SwClient2(config)#vtp mode client
 SwClient2(config)#vtp domain stemsagonet
 SwClient2(config)#vtp password rahasia
-SwClient2(config)#vtp mode client
 SwClient2(config)#
 ```
 
@@ -394,9 +394,9 @@ SwTrans(config)#
 #### Langkah ke-9: [SwTrans] aktivasi VTP
 
 ```console
+SwTrans(config)#vtp mode transparent
 SwTrans(config)#vtp domain stemsagonet
 SwTrans(config)#vtp password rahasia
-SwTrans(config)#vtp mode transparent
 SwTrans(config)#
 ```
 
@@ -415,9 +415,9 @@ SwClient3(config)#
 #### Langkah ke-11: [SwClient3] aktivasi VTP
 
 ```console
+SwClient3(config)#vtp mode client
 SwClient3(config)#vtp domain stemsagonet
 SwClient3(config)#vtp password rahasia
-SwClient3(config)#vtp mode client
 SwClient3(config)#
 ```
 
