@@ -147,7 +147,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 | Switch | Fa0/11, Fa0/12, ... s.d. Fa0/20 | 200     | -           | -             |
 | Switch | selain port di atas             | 1       | -           | -             |
 
-### 1. Konfigurasi dan Konfirmasi
+### 2. Konfigurasi dan Konfirmasi
 
 #### Langkah ke-1: [PC] atur alamat IP
 
