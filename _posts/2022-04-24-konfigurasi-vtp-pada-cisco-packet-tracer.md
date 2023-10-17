@@ -314,7 +314,7 @@ SwServer(config-if)#exit
 SwServer(config)#
 ```
 
-#### Langkah ke-3: [SwClient] aktivasi trunk link
+#### Langkah ke-3: [SwServer] aktivasi trunk link
 
 ```console
 SwServer(config)#interface range fastEthernet 0/22-23
