@@ -157,7 +157,7 @@ Pada praktikum kali ini untuk masing-masing metode akan terbagi menjadi beberapa
 
    ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/07.png){: .normal }
 
-## Metode Interface Router Berbeda-beda untuk Setiap VLAN ID
+## Metode Legacy (Interface Router Berbeda Setiap VLAN)
 
 ### Persiapan
 

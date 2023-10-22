@@ -9,89 +9,181 @@ tags: [cisco, routing, vlan]
 
 ## Pengertian
 
-Inter-VLAN routing adalah proses memungkinkan komunikasi antar VLAN (Virtual LAN) pada jaringan.
+Routing adalah proses pengiriman data dari satu jaringan ke jaringan lain. Dalam hal ini (InterVLAN Routing), yang disebut sebagai jaringan yaitu suatu VLAN (pembagian jaringan secara logical).
 
-Tanpa inter-VLAN routing, setiap VLAN hanya dapat berkomunikasi dengan VLAN lain pada switch saja, tidak dapat berkomunikasi dengan VLAN lain pada jaringan.
+![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/04.png){: .normal }
 
-## Karakteristik
+Maka bisa disimpulkan bahwa sederhananya InterVLAN Routing adalah proses pengiriman data dari suatu VLAN ke VLAN lain, sehingga end device yang terdaftar sebagai anggota VLAN ID yang berbeda dapat saling terhubung.
 
-Seperti teknik konfigurasi routing yang lain, tentu saja intervlan routing mempunyai kelebihan dan kekurangan sebagai karakteristiknya
+Dalam jaringan yang lebih kompleks, proses routing akan menggunakan tabel routing (database) untuk menentukan rute terbaik berdasarkan alamat tujuan dalam paket data.
 
-### Kelebihan
+## Perangkat
 
-Kelebihan yang didapat jika mengaplikasikan teknik konfigurasi Inter-VLAN Routing
+Umumnya perangkat yang dapat digunakan untuk mendukung proses routing pada jaringan yaitu router.
 
-1. Fleksibilitas
+![Cisco Router](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/05.jpeg){: .normal }
 
-   Inter-VLAN routing memungkinkan administrator jaringan untuk memisahkan lalu lintas jaringan berdasarkan kebutuhan, sehingga memungkinkan jaringan yang lebih fleksibel.
+Namun, untuk teknik InterVLAN routing dapat juga menggunakan perangkat multi-layer switch (switch dengan kemampuan layer 3).
 
-1. Ekonomis
+![Cisco Switch](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/06.jpg){: .normal }
 
-   Inter-VLAN routing memungkinkan pengelolaan jaringan yang lebih efisien dan mengurangi biaya investasi dalam peralatan jaringan.
+Router akan digunakan sebagai gateway yang berperan sebagai gerbang keluar masuknya traffic data dari dan ke suatu VLAN ID.
 
-1. Scalability
+![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/07.jpg){: .normal }
 
-   Inter-VLAN routing memungkinkan jaringan untuk dapat berkembang dan bertambah besar sesuai dengan kebutuhan.
+## Analogi
 
-1. Peningkatan Keamanan
+Beberapa contoh analogi sederhana suatu proses routing yaitu sebagai berikut.
 
-   Inter-VLAN routing memungkinkan administrator jaringan untuk membatasi lalu lintas jaringan dan memastikan bahwa lalu lintas jaringan tidak terkendali.
+1. Sistem Pemetaan Global/Global Positioning System (GPS):
 
-### Kekurangan
+   1. Anda ingin pergi dari titik A ke titik B.
+   1. GPS di mobil Anda adalah router virtual yang mencari jalan tercepat untuk mencapai tujuan Anda.
+   1. GPS memeriksa peta jalan dan informasi lalu lintas (analogi tabel routing) dan memandu Anda melalui jalan-jalan yang benar.
 
-Kekurangan yang didapat jika mengaplikasikan teknik konfigurasi Inter-VLAN Routing
+2. Kantor Pos:
 
-1. Komplikasi Konfigurasi
+   1. Bayangkan sebuah kantor pos yang menerima surat dari banyak pengirim dan harus mengirimnya ke berbagai tujuan.
+   2. Petugas kantor pos (router) mengambil setiap surat dan memilih rute terbaik untuk mencapai alamat tujuan.
+   3. Setelah surat berada di rute, setiap pos ronda (switch) membantu mengirimnya ke alamat yang benar.
 
-   Konfigurasi Inter-VLAN routing dapat menjadi rumit dan membutuhkan waktu dan usaha untuk memastikan bahwa konfigurasi benar.
+3. Peta Transportasi Umum:
 
-1. Latensi Tinggi
+   1. Peta sistem transportasi umum di kota besar adalah seperti tabel routing yang digunakan oleh sistem jaringan.
+   2. Peta tersebut menunjukkan berbagai rute bus dan kereta yang dapat Anda gunakan untuk mencapai berbagai tujuan di kota.
+   3. Ketika Anda ingin pergi ke suatu tempat, Anda mengacu pada peta tersebut untuk menentukan rute terbaik yang harus diambil.
 
-   Inter-VLAN routing dapat mengakibatkan latensi yang lebih tinggi dibandingkan dengan switch VLAN standar, karena data harus melewati router sebelum sampai pada tujuan akhir.
+## Kebutuhan
 
-1. Keamanan yang Kurang
+Ada beberapa alasan mengapa perlu melakukan routing antara VLAN, antara lain:
 
-   Inter-VLAN routing dapat meningkatkan risiko keamanan jika tidak diterapkan dengan benar, seperti memperkenalkan risiko akses yang tidak sah.
+1. Untuk menghubungkan perangkat di VLAN yang berbeda.
 
-1. Biaya Tinggi
+   Misalnya, Anda memiliki VLAN untuk karyawan dan VLAN untuk tamu. Untuk memungkinkan karyawan dan tamu saling berkomunikasi, Anda perlu melakukan routing antara VLAN tersebut.
 
-   Implementasi Inter-VLAN routing dapat menjadi mahal, terutama jika membutuhkan peralatan jaringan baru atau perangkat lunak yang kompleks.
+2. Untuk mengakses sumber daya di VLAN yang berbeda.
+
+   Misalnya, Anda memiliki VLAN untuk server dan VLAN untuk workstation. Untuk memungkinkan workstation mengakses sumber daya di server, Anda perlu melakukan routing antara VLAN tersebut.
+
+3. Untuk menerapkan kebijakan keamanan.
+
+   Misalnya, Anda ingin membatasi akses dari VLAN tertentu ke VLAN lainnya. Untuk menerapkan kebijakan keamanan ini, Anda perlu melakukan routing antara VLAN tersebut.
+
+4. Untuk memenuhi kebutuhan aplikasi tertentu.
+
+   Misalnya, Anda menggunakan aplikasi seperti VoIP (Voice over IP), memerlukan komunikasi antara perangkat dalam VLAN yang berbeda. Dengan Inter-VLAN Routing, maka melakukan panggilan dengan perangkat berbeda VLAN akan bisa dilakukan.
+
+Contoh situasi suatu kantor atau perusahaan di mana teknik konfigurasi InterVLAN routing butuh diimplementasi:
+
+1. Komunikasi Antar Departemen:
+
+   Departemen pemasaran perlu berbagi informasi dan file dengan departemen pengembangan. Tanpa Inter-VLAN Routing, keduanya akan terisolasi, dan komunikasi antara mereka tidak akan mungkin.
+
+2. Server Bersama:
+
+   Jika ada server bersama seperti server file atau server basis data yang harus diakses oleh kedua departemen, Inter-VLAN Routing diperlukan agar perangkat di kedua VLAN dapat mengakses server tersebut.
+
+3. VoIP
+
+   Jika kantor mengimplementasikan sistem VoIP dan perangkat telepon terhubung ke satu VLAN, sedangkan server VoIP terhubung ke VLAN lain, Inter-VLAN Routing memungkinkan perangkat telepon untuk berkomunikasi dengan server VoIP.
+
+4. Kepatuhan dan Keamanan
+
+   Dalam beberapa kasus, Inter-VLAN Routing digunakan untuk mengimplementasikan kebijakan keamanan, pengawasan, dan kepatuhan yang berbeda untuk setiap departemen atau kelompok perangkat.
+
+## Cara Kerja
+
+Berikut adalah objektif cara kerja intervlan routing:
+
+1. Perangkat di suatu VLAN yang berbeda akan mengirimkan paket data ke router.
+
+   Perangkat di VLAN yang berbeda akan mengirimkan paket data ke router, Paket data tersebut akan berisi alamat IP tujuan.
+
+2. Router akan memeriksa tabel routing untuk menentukan jalur terbaik untuk mengirimkan paket data tersebut.
+
+   Router akan memeriksa tabel routing untuk menentukan jalur terbaik untuk mengirimkan paket data tersebut. Tabel routing berisi informasi tentang jaringan yang terhubung ke router, serta jalur terbaik untuk mencapai jaringan tersebut.
+
+3. Router akan meneruskan paket data tersebut melalui jalur yang ditentukan.
+
+   Router akan meneruskan paket data tersebut melalui jalur yang ditentukan oleh tabel routing.
+
+4. Perangkat di VLAN tujuan akan menerima paket data tersebut.
+
+   Paket data tersebut akan diterima oleh perangkat di VLAN tujuan dan dapat digunakan untuk berbagai tujuan, seperti mengakses sumber daya, berkomunikasi dengan perangkat lain, atau mengunduh file.
 
 ## Metode
 
-Inter-VLAN routing dapat diterapkan dengan beberapa metode termasuk menggunakan Layer 3 switch, menggunakan router dengan interface berbeda untuk setiap vlan yang ada, maupun menggunakan Router-on-a-Stick (ROAS).
+Berikut beberapa metode konfigurasi yang bisa diimplementasikan untuk membangun jaringan routing antar VLAN:
 
-### Menggunakan Layer 3 Switch
+1. Metode 1: Multi-Layer Switching
 
-Inter-VLAN routing menggunakan konfigurasi ini dilakukan pada perangkat multilayer switch atau layer 3 switch.
+   ![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/01.png){: .normal }
 
-Selain bisa melakukan proses switching (level 2 pada data link layer) seperti switch pada umumnya, perangkat ini mampu menangani proses routing (level 3 pada network layer) atau pengiriman paket antar jaringan, dalam hal ini jaringan VLAN.
+   Multi-Layer Switching adalah metode routing antara VLAN yang menggunakan perangkat layer 3 switch. Alamat ip akan diinputkan pada suatu Interface VLAN sehingga dapat digunakan sebagai gateway suatu jaringan.
 
-Contoh topologi intervlan routing menggunakan layer 3 switch sebagai berikut
+   1. Kelebihan
 
-![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/01.png){: .normal }
+      1. Scalable untuk jaringan yang besar.
+      2. Cukup satu perangkat switch.
 
-### Menggunakan Router dengan Interface Berbeda-beda
+   2. Kekurangan
 
-Inter-VLAN routing menggunakan konfigurasi ini dilakukan pada perangkat router.
+      1. Kompleksitas konfigurasi dibanding konfig VLAN biasa.
+      1. Membutuhkan switch yang mendukung routing (layer 3).
 
-Konfigurasi ini secara umum dilakukan dengan menyediakan koneksi beberapa physical interface antara router dan switch sebagai trunk link.
+   3. Langkah Konfigurasi
 
-Jumlah link yang disediakan haruslah sejumlah VLAN ID yang butuh untuk di-routing.
+      1. Buat VLAN pada switch.
+      2. Hubungkan switch ke router.
+      3. Konfigurasi switch sebagai perangkat layer 3.
+      4. Konfigurasi IP Address dan subnet mask pada VLAN.
+      5. Konfigurasi routing pada switch.
 
-![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/02.png){: .normal }
+2. Metode 2: Legacy InterVLAN Routing
 
-### Router-on-a-Stick (ROAS)
+   ![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/02.png){: .normal }
 
-Inter-VLAN routing menggunakan konfigurasi ini dilakukan juga pada perangkat router.
+   Legacy Inter-VLAN Routing adalah metode routing antara VLAN yang menggunakan banyak interface router, masing-masing terhubung ke port switch di VLAN yang berbeda. Interface router ini berfungsi sebagai gateway, yang membutuhkan kabel tambahan jika jaringan harus diperluas.
 
-Konfigurasi dilakukan dengan menyediakan sebuah physical interface pada router sebagai trunk link yang terhubung ke sebuah port pada switch dalam mode trunk.
+   1. Kelebihan
 
-Router dikonfigurasi untuk mengaktifkan subinterface/interface virtual sesuai dengan physical interface yang digunakan.
+      1. Sederhana dan mudah untuk diimplementasi.
 
-jumlah subinterface yang diaktifkan haruslah sejumlah VLAN ID yang butuh untuk di-routing.
+   2. Kekurangan
 
-![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/03.png){: .normal }
+      1. Tidak scalable untuk jaringan yang besar.
+      2. Biaya tinggi karena membutuhkan banyak perangkat.
+
+   3. Langkah Konfigurasi
+
+      1. Buat VLAN pada switch.
+      2. Hubungkan router ke switch.
+      3. Konfigurasi IP Address dan subnet mask untuk setiap interface router yang terhubung ke VLAN.
+      4. Konfigurasi routing protocol pada router.
+
+3. Metode 3: Router-on-a-Stick (RoaS)
+
+   ![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/03.png){: .normal }
+
+   RoaS adalah metode yang menggunakan satu interface fisik router untuk menghubungkan ke switch. Interface fisik router tersebut kemudian dibagi menjadi beberapa subinterface, satu untuk setiap VLAN yang ingin dihubungkan. Subinterface inilah yang digunakan sebagai gateway.
+
+   1. Kelebihan
+
+      1. Scalable untuk jaringan yang besar.
+      2. Membutuhkan satu interface fisik router.
+      3. Mengurangi biaya perangkat keras.
+
+   2. Kekurangan
+
+      1. Kompleksitas konfigurasi.
+      2. Memerlukan switch yang mendukung trunk port.
+
+   3. Langkah Konfigurasi
+
+      1. Hubungkan interface fisik router ke switch port yang terhubung ke VLAN yang berbeda.
+      2. Konfigurasi interface fisik router sebagai trunk port.
+      3. Buat subinterface untuk setiap VLAN yang ingin dihubungkan.
+      4. Konfigurasi IP Address dan subnet mask pada subinterface.
 
 ## Keamanan
 
@@ -101,48 +193,36 @@ Berikut adalah beberapa konsep keamanan yang penting dalam Inter-VLAN routing:
 
 1. Access Control List (ACL)
 
-   ACL adalah daftar kontrol akses yang menentukan bagaimana paket jaringan diterima atau ditolak oleh perangkat jaringan.
-
-   ACL menggunakan aturan khusus untuk menentukan apakah paket diterima atau ditolak.
-
-   Ini digunakan untuk memastikan bahwa jaringan terlindung dari serangan dan akses yang tidak sah.
+   ACL adalah daftar kontrol akses yang menentukan bagaimana paket jaringan diterima atau ditolak oleh perangkat jaringan. ACL menggunakan aturan khusus untuk menentukan apakah paket diterima atau ditolak. Ini digunakan untuk memastikan bahwa jaringan terlindung dari serangan dan akses yang tidak sah.
 
 1. Firewall
 
-   Firewall adalah perangkat yang memantau dan mengendalikan akses jaringan.
-
-   Firewall memiliki kemampuan untuk menganalisis traffic jaringan dan membuat keputusan apakah traffic tersebut harus diterima atau ditolak.
-
-   Firewall biasanya digunakan untuk memblokir serangan jaringan dan membatasi akses yang tidak sah.
+   Firewall adalah perangkat yang memantau dan mengendalikan akses jaringan. Firewall memiliki kemampuan untuk menganalisis traffic jaringan dan membuat keputusan apakah traffic tersebut harus diterima atau ditolak. Firewall biasanya digunakan untuk memblokir serangan jaringan dan membatasi akses yang tidak sah.
 
 1. VLAN Access Control
 
-   Menentukan VLAN mana yang dapat diakses oleh host atau perangkat tertentu.
-
-   Ini membatasi akses yang tidak sah dan memastikan bahwa hanya perangkat yang sah yang dapat mengakses jaringan.
+   Menentukan VLAN mana yang dapat diakses oleh host atau perangkat tertentu. Ini membatasi akses yang tidak sah dan memastikan bahwa hanya perangkat yang sah yang dapat mengakses jaringan.
 
 1. Port Security
 
-   Menentukan perangkat apa saja yang dapat mengakses switch melalui port tertentu.
-
-   Ini membatasi akses yang tidak sah dan memastikan bahwa hanya perangkat yang sah yang dapat mengakses jaringan.
+   Menentukan perangkat apa saja yang dapat mengakses switch melalui port tertentu. Ini membatasi akses yang tidak sah dan memastikan bahwa hanya perangkat yang sah yang dapat mengakses jaringan.
 
 1. Virtual Router Redundancy Protocol (VRRP)
 
-   VRRP memastikan bahwa router tetap aktif dan memberikan solusi backup jika salah satu router gagal.
-
-   Ini memastikan bahwa jaringan tetap berfungsi selama ada gangguan.
+   VRRP memastikan bahwa router tetap aktif dan memberikan solusi backup jika salah satu router gagal. Ini memastikan bahwa jaringan tetap berfungsi selama ada gangguan.
 
 1. Encryption
 
-   Menggunakan enkripsi untuk memproteksi data yang dikirimkan melalui jaringan.
-
-   Ini memastikan bahwa data tidak dapat dicuri atau dibaca oleh pihak yang tidak sah.
+   Menggunakan enkripsi untuk memproteksi data yang dikirimkan melalui jaringan. Ini memastikan bahwa data tidak dapat dicuri atau dibaca oleh pihak yang tidak sah.
 
 1. Virtual Routing and Forwarding (VRF)
 
-   VRF adalah teknologi yang memungkinkan jaringan memiliki beberapa routing domain yang terisolasi secara logika dalam satu perangkat.
+   VRF adalah teknologi yang memungkinkan jaringan memiliki beberapa routing domain yang terisolasi secara logika dalam satu perangkat. VRF memastikan bahwa jaringan dapat memiliki routing domain yang terisolasi dan tidak berdampak pada routing domain lainnya. Ini memastikan bahwa jaringan tetap stabil dan aman meskipun ada perubahan yang terjadi dalam jaringan.
 
-   VRF memastikan bahwa jaringan dapat memiliki routing domain yang terisolasi dan tidak berdampak pada routing domain lainnya.
+## DHCP
 
-   Ini memastikan bahwa jaringan tetap stabil dan aman meskipun ada perubahan yang terjadi dalam jaringan.
+Dynamic Host Configuration Protocol (DHCP) adalah protokol jaringan yang digunakan untuk mengotomatisasi proses konfigurasi alamat IP dan pengaturan jaringan lainnya pada perangkat yang terhubung ke jaringan komputer.
+
+Dapat disimpulkan bahwa, DHCP Server adalah komputer atau perangkat jaringan yang menjalankan perangkat lunak server DHCP dan bertanggung jawab untuk memberikan alamat IP serta konfigurasi jaringan lainnya kepada perangkat yang memintanya di dalam jaringan.
+
+Ketika end device seperti komputer, smartphone, atau perangkat jaringan lainnya terhubung ke suatu jaringan, mereka mengirim permintaan ke DHCP Server untuk menerima alamat IP dan informasi konfigurasi jaringan.
