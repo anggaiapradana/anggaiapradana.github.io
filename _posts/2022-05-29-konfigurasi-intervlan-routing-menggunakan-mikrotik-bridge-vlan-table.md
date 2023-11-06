@@ -18,16 +18,16 @@ Praktikum berikut menggunakan port wlan selain ether, oleh karena itu akan mengg
 
 ## Alat dan Bahan
 
-1. Jaringan router internet (instruktur)
+1. Jaringan router internet (disediakan instruktur)
    - SSID: internet
    - Security (Password): 1Sampai8
-1. 2 buah Komputer, digunakan sebagai remote sekaligus client pada pengujian
-1. 2 buah MikroTik Router, digunakan 1 sebagai router dan 1 sebagai switch
+2. 2 buah Komputer; 1 sebagai remote sekaligus client pada pengujian
+3. 2 buah MikroTik Router; 1 sebagai router dan 1 sebagai switch
    - minimal 4 port eth dan 1 port wlan
    - reset configuration
    - no default configuration
-1. 3 buah kabel UTP, digunakan 1 untuk trunk link dan 2 untuk access link
-1. MikroTik WinBox
+4. 3 buah kabel UTP; 1 untuk trunk link dan 2 untuk access link
+5. MikroTik WinBox; remote client untuk router
 
 ## Langkah Kerja
 
@@ -137,7 +137,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 
 #### Langkah ke-07: konfigurasi dhcp server untuk vlan
 
-> Menu: IP > DHCP Server > DHCP Setup
+> Menu: IP > DHCP Server > DHCP > DHCP Setup
 
 ![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7a.png){: .normal }
 ![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7b.png){: .normal }
@@ -204,6 +204,75 @@ Menu: Terminal > ping 8.8.8.8 dan ping google.com
 ![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r16.png){: .normal }
 
 ### 3. Konfigurasi Switch
+
+#### Langkah ke-01: pindah kabel dari eth4 router ke eth4 switch untuk remote
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s1.png){: .normal }
+
+#### Langkah ke-02: pasang kabel pada port eth1 untuk trunk, penghubung dari router ke switch
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s2.png){: .normal }
+
+#### Langkah ke-03: login pada mikrotik
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s3.png){: .normal }
+
+#### Langkah ke-04: ganti hostname
+
+> Menu: System > Identity
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s4.png){: .normal }
+
+#### Langkah ke-05: aktifkan interface bridge
+
+> Menu: Bridge > Bridge > +
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s5.png){: .normal }
+
+#### Langkah ke-06: tambahkan port eth1 yang digunakan sebagai trunk
+
+> Menu: Bridge > Ports > +
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s6.png){: .normal }
+
+#### Langkah ke-07: tambahkan port eth2 yang digunakan sebagai anggota vlan 10
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s7a.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s7b.png){: .normal }
+
+#### Langkah ke-08: tambahkan port eth3 yang digunakan sebagai anggota vlan 20
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s8a.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s8b.png){: .normal }
+
+#### Langkah ke-09: tambahkan port wlan1 yang digunakan sebagai anggota vlan 30
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9a.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9b.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9c.png){: .normal }
+
+#### Langkah ke-10: mengatur mode link: tagged untuk trunk dan untagged untuk access
+
+> Menu: Bridge > VLANs > +
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10a.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10b.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10c.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10d.png){: .normal }
+
+#### Langkah ke-11: aktifkan VLAN filtering
+
+> Menu: Bridge > Bridge
+>
+> Klik ganda bridge1, pindah ke tab VLAN, klik ✔️ pada VLAN Filtering
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s11.png){: .normal }
+
+#### Langkah ke-12: aktivasi interface wlan1
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12a.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12b.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12c.png){: .normal }
 
 ### 4. Konfigurasi Client dan Pengujian
 
