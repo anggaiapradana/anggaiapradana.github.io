@@ -207,11 +207,11 @@ Menu: Terminal > ping 8.8.8.8 dan ping google.com
 
 #### Langkah ke-01: pindah kabel dari eth4 router ke eth4 switch untuk remote
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s1.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s1.jpg){: .normal }
 
 #### Langkah ke-02: pasang kabel pada port eth1 untuk trunk, penghubung dari router ke switch
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s2.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s2.jpg){: .normal }
 
 #### Langkah ke-03: login pada mikrotik
 
