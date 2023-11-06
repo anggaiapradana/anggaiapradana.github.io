@@ -276,4 +276,37 @@ Menu: Terminal > ping 8.8.8.8 dan ping google.com
 
 ### 4. Konfigurasi Client dan Pengujian
 
+#### Langkah ke-01: konfigurasi DHCP Client pada Client1
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c1a.jpg){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c1b.jpg){: .normal }
+
+#### Langkah ke-02: konfirmasi routing ke VLAN lain (VLAN 20) dan internet pada Client1
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c2.jpg){: .normal }
+
+#### Langkah ke-03: konfigurasi DHCP Client pada Client2
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c3.png){: .normal }
+
+#### Langkah ke-04: konfirmasi routing ke VLAN lain (VLAN 10) dan internet pada Client2
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c4.png){: .normal }
+
+#### Langkah ke-05: konfigurasi DHCP Client pada Client3a, koneksikan perangkat via wifi
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5a.jpg){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5b.jpg){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5c.jpg){: .normal }
+
+#### Langkah ke-06: konfigurasi DHCP Client pada Client3b, koneksikan perangkat via wifi
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c6a.jpg){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c6b.jpg){: .normal }
+
+#### Langkah ke-07: konfirmasi routing ke VLAN lain (VLAN 10 dan VLAN 20) ke VLAN 30
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c7a.jpg){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c7b.png){: .normal }
+
 ### 5. Berlatih
