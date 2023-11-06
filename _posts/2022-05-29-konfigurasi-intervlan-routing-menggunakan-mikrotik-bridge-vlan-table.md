@@ -135,23 +135,73 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 ![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6c.png){: .normal }
 ![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6d.png){: .normal }
 
-#### Langkah ke-07:
+#### Langkah ke-07: konfigurasi dhcp server untuk vlan
 
-#### Langkah ke-08:
+> Menu: IP > DHCP Server > DHCP Setup
 
-#### Langkah ke-09:
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7a.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7b.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7c.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7d.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7e.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7f.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7g.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7h.png){: .normal }
 
-#### Langkah ke-10:
+#### Langkah ke-08: definisikan security profile
 
-#### Langkah ke-11:
+> Menu: Wireless > Security Profile > +
 
-#### Langkah ke-12:
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r8.png){: .normal }
 
-#### Langkah ke-13:
+#### Langkah ke-09: aktivasi wlan1
 
-#### Langkah ke-14:
+> Menu: Wireless > WiFi Interfaces > wlan1 > ✔
 
-#### Langkah ke-15:
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r9.png){: .normal }
+
+#### Langkah ke-10: koneksikan router vlan dengan router internet
+
+> Klik ganda wlan1, pindah ke tab Wireless
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r10.png){: .normal }
+
+#### Langkah ke-11: konfigurasi alamat ip pada wlan
+
+> Menu: IP > Addresses > +
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r11.png){: .normal }
+
+#### Langkah ke-12: konfirmasi koneksi router vlan dengan router internet
+
+> Menu: Terminal > ping 172.16.1.1
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r12.png){: .normal }
+
+#### Langkah ke-13: dapatkan koneksi internet untuk router vlan
+
+Menu: IP > Firewall > NAT > +
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r13a.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r13b.png){: .normal }
+
+#### Langkah ke-14: konfigurasi default route
+
+> Menu: IP > Routes > +
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r14.png){: .normal }
+
+#### Langkah ke-15: konfigurasi dns server
+
+Menu: IP > DNS > tambahkan alamat router internet
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r15.png){: .normal }
+
+#### Langkah ke-16: konfirmasi koneksi router vlan dengan internet
+
+Menu: Terminal > ping 8.8.8.8 dan ping google.com
+
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r16.png){: .normal }
 
 ### 3. Konfigurasi Switch
 
