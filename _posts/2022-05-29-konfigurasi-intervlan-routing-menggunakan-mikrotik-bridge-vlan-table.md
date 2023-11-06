@@ -43,7 +43,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 
 #### Topologi jaringan
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/topologi1.jpg){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/topo1.jpg){: .normal }
 
 #### Spesifikasi
 
