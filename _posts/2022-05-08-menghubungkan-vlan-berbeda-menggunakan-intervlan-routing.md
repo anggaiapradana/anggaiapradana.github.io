@@ -29,7 +29,7 @@ Namun, untuk teknik InterVLAN routing dapat juga menggunakan perangkat multi-lay
 
 Router akan digunakan sebagai gateway yang berperan sebagai gerbang keluar masuknya traffic data dari dan ke suatu VLAN ID.
 
-![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/07.jpg){: .normal }
+![Perangkat pada Cisco Packet Tracer](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/07.jpg){: .normal }
 
 ## Analogi
 
