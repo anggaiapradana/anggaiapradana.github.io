@@ -119,7 +119,7 @@ Berikut beberapa metode konfigurasi yang bisa diimplementasikan untuk membangun 
 
    ![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/01.png){: .normal }
 
-   Multi-Layer Switching adalah metode routing antara VLAN yang menggunakan perangkat layer 3 switch. Alamat ip akan diinputkan pada suatu Interface VLAN sehingga dapat digunakan sebagai gateway suatu jaringan.
+   Multi-Layer Switching adalah metode routing antara VLAN yang menggunakan perangkat layer 3 switch. Alamat ip akan diinputkan pada suatu Interface VLAN (Switch Virtual Interface/SVI) sehingga dapat digunakan sebagai gateway suatu jaringan.
 
    1. Kelebihan
 
