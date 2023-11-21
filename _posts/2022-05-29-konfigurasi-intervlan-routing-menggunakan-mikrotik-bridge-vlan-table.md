@@ -317,6 +317,7 @@ Menu: Terminal > ping 8.8.8.8 dan ping google.com
 
 #### Instruksi
 
-1. Konfigurasikan jaringan InterVLAN di atas sesuai ketentuan
-1. Lakukan pengamatan dan pengujian pada jaringan terkonfigurasi
-1. Susun dokumentasi sesuai lembar kerja tersedia
+1. Reservasi alamat server pada DHCP sebanyak 5 alamat pertama masing-masing jaringan
+2. Konfigurasikan jaringan InterVLAN di atas sesuai ketentuan
+3. Lakukan pengamatan dan pengujian pada jaringan terkonfigurasi
+4. Susun dokumentasi sesuai lembar kerja tersedia
