@@ -43,7 +43,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 
 #### Topologi jaringan
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top1.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top1.jpg){: .normal }
 
 #### Spesifikasi
 
@@ -313,7 +313,7 @@ Menu: Terminal > ping 8.8.8.8 dan ping google.com
 
 #### Topologi Jaringan
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top2.png){: .normal }
+![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top2.jpg){: .normal }
 
 #### Instruksi
 
