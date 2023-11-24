@@ -21,6 +21,8 @@ Praktikum berikut menggunakan port wlan selain ether, oleh karena itu akan mengg
 1. Jaringan router internet (disediakan instruktur)
    - SSID: internet
    - Security (Password): 1Sampai8
+   - IP; DHCP Client dari internet
+   - DNS Server; Allow Remote Request
 2. 2 buah Komputer; 1 sebagai remote sekaligus client pada pengujian
 3. 2 buah MikroTik Router; 1 sebagai router dan 1 sebagai switch
    - minimal 4 port eth dan 1 port wlan

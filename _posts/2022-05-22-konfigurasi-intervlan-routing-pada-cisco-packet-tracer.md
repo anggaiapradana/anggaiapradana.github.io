@@ -11,7 +11,7 @@ tags: [cisco, routing, vlan]
 
 Teknik konfigurasi InterVLAN Routing memungkinkan untuk menghubungkan dua buah VLAN atau lebih yang berbeda VLAN ID.
 
-Terdapat beberapa teknik konfigurasi InterVLAN Routing yang bisa dilakukan, baik menggunakan perangkat Layer 3 Switch maupun menggunakan perangkat Router.
+Terdapat beberapa teknik konfigurasi InterVLAN Routing yang bisa dilakukan, baik menggunakan perangkat Multilayer Switch (Layer 3 Switch) maupun menggunakan perangkat Router, baik metode legacy maupun Router on a Stick (RoaS).
 
 ## Alat dan Bahan
 
@@ -21,22 +21,41 @@ Terdapat beberapa teknik konfigurasi InterVLAN Routing yang bisa dilakukan, baik
 
 ## Perintah CLI
 
-| Perintah                                                | Deskripsi                                                                                           |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Switch(config)#interface vlan `vlan-id`                 | Mengaktiftan interface VLAN sebagai interface                                                       |
-| Switch(config-if)#ip address `ip-address` `subnet-mask` | Memberi alamat interface VLAN                                                                       |
-| Switch(config)#ip routing                               | Mengaktifkan protokol routing                                                                       |
-| Router(config-if)#no shutdown                           | Merubah status interface dari down ke up                                                            |
-| Router(config)#interface `port-type` `port-sub-num`     | Mengaktiftan subinterface                                                                           |
-| Router(config-subif)#encapsulation dot1q `vlan-id`      | Mengaktifkan metode enkapsulasi data untuk subinterface yang akan diteruskan ke suatu jaringan VLAN |
+Perintah yang digunakan pada praktikum kali ini yaitu:
 
-## Langkah Kerja
+1. Switch(config)#interface vlan 'vlan-id'
 
-Pada praktikum kali ini untuk masing-masing metode akan terbagi menjadi beberapa langkah yaitu Persiapan, Konfigurasi, Pengujian.
+   Perintah ini digunakan untuk masuk ke konfigurasi antarmuka virtual LAN (VLAN) pada switch dengan menentukan ID VLAN. Misalnya, untuk masuk ke konfigurasi VLAN 10, Anda dapat menggunakan perintah Switch(config)#interface vlan 10.
 
-## Metode Layer 3 Switch
+1. Switch(config-if)#ip address 'ip-address' 'subnet-mask'
 
-### Persiapan
+   Perintah ini digunakan untuk menetapkan alamat IP dan subnet mask pada antarmuka VLAN yang telah dikonfigurasi sebelumnya. Gantilah 'ip-address' dengan alamat IP yang diinginkan dan 'subnet-mask' dengan subnet mask yang sesuai. Contohnya, Switch(config-if)#ip address 192.168.1.1 255.255.255.0.
+
+1. Switch(config)#ip routing
+
+   Perintah ini mengaktifkan routing pada switch, memungkinkan switch untuk mengirimkan paket antar-VLAN.
+
+1. Router(config-if)#no shutdown
+
+   Perintah ini digunakan pada antarmuka router untuk mengaktifkan antarmuka yang sebelumnya dinonaktifkan.
+
+1. Router(config)#interface 'port-type' 'sub-port-num'
+
+   Perintah ini digunakan untuk masuk ke konfigurasi antarmuka pada router, dengan menentukan tipe port (misalnya, gigabitethernet atau fastethernet) dan nomor sub-interface (interface virtual dengan nomor yang ditentukan administrator yang merupakan pembagian dari interface fisik router). Contohnya, Router(config)#interface gigabitethernet 0/1.xxx atau Router(config)#interface fastethernet 0/1.1x.
+
+1. Router(config-subif)#encapsulation dot1q 'vlan-id'
+
+   Perintah ini digunakan pada antarmuka sub-interface router untuk menentukan konfigurasi encapsulation menggunakan protokol IEEE 802.1Q dengan menentukan ID VLAN. Contohnya, Router(config-subif)#encapsulation dot1q 10.
+
+## Langkah Kerja Metode Layer 3 Switch
+
+Pada praktikum kali ini untuk masing-masing metode akan terbagi menjadi beberapa langkah yaitu
+
+1. Persiapan,
+2. Konfigurasi, dan
+3. Pengujian.
+
+### 1. Persiapan
 
 #### Topologi Jaringan
 
@@ -66,96 +85,90 @@ Pada praktikum kali ini untuk masing-masing metode akan terbagi menjadi beberapa
 | InterVLAN1 | VLAN      | 100     | 10.xx.100.1   | 255.255.255.0 |             |
 | InterVLAN1 | VLAN      | 200     | 10.xx.200.1   | 255.255.255.0 |             |
 
-### Konfigurasi
+### 2. Konfigurasi
 
-#### Multilayers Switch: InterVLAN1
+#### Langkah ke-1: [Switch] Inisialisasi VLAN
 
-1. Inisialisasi VLAN
+```console
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname InterVLAN1
+InterVLAN1(config)#
+InterVLAN1(config)#vlan 100
+InterVLAN1(config-vlan)#name private
+InterVLAN1(config-vlan)#exit
+InterVLAN1(config)#vlan 200
+InterVLAN1(config-vlan)#name public
+InterVLAN1(config-vlan)#exit
+InterVLAN1(config)#
+```
 
-   ```console
-   Switch>enable
-   Switch#configure terminal
-   Switch(config)#hostname InterVLAN1
-   InterVLAN1(config)#
-   InterVLAN1(config)#vlan 100
-   InterVLAN1(config-vlan)#name private
-   InterVLAN1(config-vlan)#exit
-   InterVLAN1(config)#vlan 200
-   InterVLAN1(config-vlan)#name public
-   InterVLAN1(config-vlan)#exit
-   InterVLAN1(config)#
-   ```
+#### Langkah ke-2: [Switch] Atur Keanggotaan VLAN
 
-1. Atur Keanggotaan VLAN
+```console
+InterVLAN1(config)#interface range fastEthernet 0/1-10
+InterVLAN1(config-if-range)#switchport mode access
+InterVLAN1(config-if-range)#switchport access vlan 100
+InterVLAN1(config-if-range)#exit
+InterVLAN1(config)#interface range fastEthernet 0/11-20
+InterVLAN1(config-if-range)#switchport mode access
+InterVLAN1(config-if-range)#switchport access vlan 200
+InterVLAN1(config-if-range)#exit
+InterVLAN1(config)#
+```
 
-   ```console
-   InterVLAN1(config)#interface range fastEthernet 0/1-10
-   InterVLAN1(config-if-range)#switchport mode access
-   InterVLAN1(config-if-range)#switchport access vlan 100
-   InterVLAN1(config-if-range)#exit
-   InterVLAN1(config)#interface range fastEthernet 0/11-20
-   InterVLAN1(config-if-range)#switchport mode access
-   InterVLAN1(config-if-range)#switchport access vlan 200
-   InterVLAN1(config-if-range)#exit
-   InterVLAN1(config)#
-   ```
+#### Langkah ke-3: [Switch] Input IP Address pada SVI (Switch Virtual Interface) sebagai Gateway
 
-1. Input IP Address pada VLAN
+```console
+InterVLAN1(config)#interface vlan 100
+InterVLAN1(config-if)#ip address 10.99.100.1 255.255.255.0
+InterVLAN1(config-if)#exit
+InterVLAN1(config)#interface vlan 200
+InterVLAN1(config-if)#ip address 10.99.200.1 255.255.255.0
+InterVLAN1(config-if)#exit
+InterVLAN1(config)#
+```
 
-   ```console
-   InterVLAN1(config)#interface vlan 100
-   InterVLAN1(config-if)#ip address 10.99.100.1 255.255.255.0
-   InterVLAN1(config-if)#exit
-   InterVLAN1(config)#interface vlan 200
-   InterVLAN1(config-if)#ip address 10.99.200.1 255.255.255.0
-   InterVLAN1(config-if)#exit
-   InterVLAN1(config)#
-   ```
+#### Langkah ke-4: [Switch] Routing pada VLAN
 
-1. Routing pada VLAN
+```console
+InterVLAN1(config)#ip routing
+InterVLAN1(config)#exit
+InterVLAN1#copy running-config startup-config
+InterVLAN1#
+```
 
-   ```console
-   InterVLAN1(config)#ip routing
-   InterVLAN1(config)#exit
-   InterVLAN1#copy running-config startup-config
-   InterVLAN1#
-   ```
+#### Langkah ke-5: [Switch] Konfirmasi Konfigurasi VLAN
 
-1. Konfirmasi Konfigurasi VLAN
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/02.png){: .normal }
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/02.png){: .normal }
+#### Langkah ke-6: [PC] Konfigurasi alamat IP
 
-#### PC
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/03.png){: .normal }
 
-1. Konfirmasi alamat IP
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/04.png){: .normal }
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/03.png){: .normal }
+#### Langkah ke-7: [PC] Konfirmasi alamat IP
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/04.png){: .normal }
+> Command Prompt > `ipconfig`
 
-#### PC
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/05.png){: .normal }
 
-1. Konfirmasi alamat IP
+### 3. Pengujian
 
-   `ipconfig`
+#### Langkah ke-1: Uji jaringan VLAN ID sama
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/05.png){: .normal }
+> Command Prompt > `ping`
 
-### Pengujian
+Contoh: PC1a ke PC1b
 
-1. Uji jaringan VLAN ID sama
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/06.png){: .normal }
 
-   `ping`
+#### Langkah ke-2: Uji jaringan VLAN ID berbeda
 
-   Contoh: PC1a ke PC1b
+Contoh: PC1b ke PC2a
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/06.png){: .normal }
-
-2. Uji jaringan VLAN ID berbeda
-
-   Contoh: PC1b ke PC2a
-
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/07.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/07.png){: .normal }
 
 ## Metode Legacy (Interface Router Berbeda Setiap VLAN)
 
