@@ -49,7 +49,7 @@ Perintah yang digunakan pada praktikum kali ini yaitu:
 
 ## Langkah Kerja Metode Layer 3 Switch
 
-Pada praktikum kali ini untuk masing-masing metode akan terbagi menjadi beberapa langkah yaitu
+Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
 
 1. Persiapan,
 2. Konfigurasi, dan
@@ -87,7 +87,7 @@ Pada praktikum kali ini untuk masing-masing metode akan terbagi menjadi beberapa
 
 ### 2. Konfigurasi
 
-#### Langkah ke-1: [Switch] Inisialisasi VLAN
+#### Langkah ke-1: [Switch: InterVLAN1] Inisialisasi VLAN
 
 ```console
 Switch>enable
@@ -103,7 +103,7 @@ InterVLAN1(config-vlan)#exit
 InterVLAN1(config)#
 ```
 
-#### Langkah ke-2: [Switch] Atur Keanggotaan VLAN
+#### Langkah ke-2: [Switch: InterVLAN1] Atur Keanggotaan VLAN
 
 ```console
 InterVLAN1(config)#interface range fastEthernet 0/1-10
@@ -117,7 +117,7 @@ InterVLAN1(config-if-range)#exit
 InterVLAN1(config)#
 ```
 
-#### Langkah ke-3: [Switch] Input IP Address pada SVI (Switch Virtual Interface) sebagai Gateway
+#### Langkah ke-3: [Switch: InterVLAN1] Input IP Address pada SVI (Switch Virtual Interface) sebagai Gateway
 
 ```console
 InterVLAN1(config)#interface vlan 100
@@ -129,7 +129,7 @@ InterVLAN1(config-if)#exit
 InterVLAN1(config)#
 ```
 
-#### Langkah ke-4: [Switch] Routing pada VLAN
+#### Langkah ke-4: [Switch: InterVLAN1] Routing pada VLAN
 
 ```console
 InterVLAN1(config)#ip routing
@@ -138,7 +138,7 @@ InterVLAN1#copy running-config startup-config
 InterVLAN1#
 ```
 
-#### Langkah ke-5: [Switch] Konfirmasi Konfigurasi VLAN
+#### Langkah ke-5: [Switch: InterVLAN1] Konfirmasi Konfigurasi VLAN
 
 ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/02.png){: .normal }
 
@@ -170,9 +170,15 @@ Contoh: PC1b ke PC2a
 
 ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/07.png){: .normal }
 
-## Metode Legacy (Interface Router Berbeda Setiap VLAN)
+## Langkah Kerja Metode Legacy (Interface Router Berbeda Setiap VLAN)
 
-### Persiapan
+Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
+
+1. Persiapan,
+2. Konfigurasi, dan
+3. Pengujian.
+
+### 1. Persiapan
 
 #### Topologi Jaringan
 
@@ -205,128 +211,126 @@ Contoh: PC1b ke PC2a
 | InterVLAN2 | Fa0/0     | 30      | 172.xx.30.1   | 255.255.255.0 |             |
 | InterVLAN2 | Fa0/0     | 40      | 172.xx.40.1   | 255.255.255.0 |             |
 
-### Konfigurasi
+### 2. Konfigurasi
 
-#### Switch: Sw2
+#### Langkah ke-1: [Switch: Sw2] Inisialisasi VLAN
 
-1. Inisialisasi VLAN
+```console
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname Sw2
+Sw2(config)#vlan 30
+Sw2(config-vlan)#name Home
+Sw2(config-vlan)#exit
+Sw2(config)#vlan 40
+Sw2(config-vlan)#name Work
+Sw2(config-vlan)#exit
+Sw2(config)#
+```
 
-   ```console
-   Switch>enable
-   Switch#configure terminal
-   Switch(config)#hostname Sw2
-   Sw2(config)#vlan 30
-   Sw2(config-vlan)#name Home
-   Sw2(config-vlan)#exit
-   Sw2(config)#vlan 40
-   Sw2(config-vlan)#name Work
-   Sw2(config-vlan)#exit
-   Sw2(config)#
-   ```
+#### Langkah ke-2: [Switch: Sw2] Atur Keanggotaan VLAN
 
-1. Atur Keanggotaan VLAN
+```console
+Sw2(config)#interface range fastEthernet 0/1-15, fastEthernet 0/23
+Sw2(config-if-range)#switchport mode access
+Sw2(config-if-range)#switchport access vlan 30
+Sw2(config-if-range)#exit
+Sw2(config)#interface range fastEthernet 0/16-22, fastEthernet 0/24
+Sw2(config-if-range)#switchport mode access
+Sw2(config-if-range)#switchport access vlan 40
+Sw2(config-if-range)#exit
+Sw2(config)#end
+Sw2#copy running-config startup-config
+Sw2#
+```
 
-   ```console
-   Sw2(config)#interface range fastEthernet 0/1-15, fastEthernet 0/23
-   Sw2(config-if-range)#switchport mode access
-   Sw2(config-if-range)#switchport access vlan 30
-   Sw2(config-if-range)#exit
-   Sw2(config)#interface range fastEthernet 0/16-22, fastEthernet 0/24
-   Sw2(config-if-range)#switchport mode access
-   Sw2(config-if-range)#switchport access vlan 40
-   Sw2(config-if-range)#exit
-   Sw2(config)#end
-   Sw2#copy running-config startup-config
-   Sw2#
-   ```
+#### Langkah ke-3: [Switch: Sw2] Konfirmasi Konfigurasi VLAN
 
-1. Konfirmasi Konfigurasi VLAN
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/09.png){: .normal }
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/09.png){: .normal }
-
-#### Router: InterVLAN2
+#### Langkah ke-4: [Router: InterVLAN2] Konfigurasi Alamat IP
 
 > **Catatan:**
 > Jawab dengan **no** jika muncul prompt **Continue with configuration dialog? [yes/no]:** saat membuka CLI pada perangkat Router pertama kali.
 
-1. Konfigurasi Alamat IP
-
-   ```console
-   Router>enable
-   Router#configure terminal
-   Router(config)#hostname InterVLAN2
-   InterVLAN2(config)#interface fastEthernet 0/0
-   InterVLAN2(config-if)#ip address 172.99.30.1 255.255.255.0
-   InterVLAN2(config-if)#no shutdown
-   InterVLAN2(config-if)#exit
-   InterVLAN2(config)#interface fastEthernet 0/1
-   InterVLAN2(config-if)#ip address 172.99.40.1 255.255.255.0
-   InterVLAN2(config-if)#no shutdown
-   InterVLAN2(config-if)#exit
-   InterVLAN2(config)#end
-   InterVLAN2#copy running-config startup-config
-   InterVLAN2#
-   ```
+```console
+Router>enable
+Router#configure terminal
+Router(config)#hostname InterVLAN2
+InterVLAN2(config)#interface fastEthernet 0/0
+InterVLAN2(config-if)#ip address 172.99.30.1 255.255.255.0
+InterVLAN2(config-if)#no shutdown
+InterVLAN2(config-if)#exit
+InterVLAN2(config)#interface fastEthernet 0/1
+InterVLAN2(config-if)#ip address 172.99.40.1 255.255.255.0
+InterVLAN2(config-if)#no shutdown
+InterVLAN2(config-if)#exit
+InterVLAN2(config)#end
+InterVLAN2#copy running-config startup-config
+InterVLAN2#
+```
 
 > **Catatan:**
 > Berbeda dengan Switch yang interfacenya otomatis akan hidup (indikator langsung hijau) ketika suatu kabel dipasang, interface pada Router harus dihidupkan secara manual sehingga setiap mengonfigurasi interface harus mengeksekusi perintah **no shutdown**.
 
-1. Konfirmasi Alamat IP
+#### Langkah ke-5: [Router: InterVLAN2] Konfirmasi Alamat IP
 
-   `show running-config`
+`show running-config`
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/10.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/10.png){: .normal }
 
-#### PC
+#### Langkah ke-6: [PC] Konfigurasi Alamat IP
 
-1. Konfigurasi Alamat IP
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/11.png){: .normal }
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/11.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/12.png){: .normal }
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/12.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/13.png){: .normal }
 
-#### PC
+### 3. Pengujian
 
-1. Konfirmasi Alamat IP
+#### Langkah ke-1: [PC] Uji jaringan VLAN ID sama
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/13.png){: .normal }
+Contoh: PC3a ke PC3b
 
-### Pengujian
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/14.png){: .normal }
 
-1. Uji jaringan VLAN ID sama
+#### Langkah ke-2: [PC] Uji jaringan VLAN ID berbeda
 
-   Contoh: PC3a ke PC3b
+Contoh: PC3b ke PC4a
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/14.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/15.png){: .normal }
 
-1. Uji jaringan VLAN ID berbeda
+#### Langkah ke-3: [Router: InterVLAN2] Melacak pengiriman paket pada perangkat Router dari sumber ke tujuan
 
-   Contoh: PC3b ke PC4a
+> CLI > `traceroute`
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/15.png){: .normal }
+Contoh: Router ke masing-masing PC
 
-1. Melacak pengiriman paket pada perangkat Router dari sumber ke tujuan
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/16.png){: .normal }
 
-   `traceroute`
+#### Langkah ke-4: [PC] Melacak pengiriman paket dari sumber ke tujuan pada perangkat PC
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/16.png){: .normal }
+> Command Prompt > `tracert`
 
-1. Melacak pengiriman paket dari sumber ke tujuan pada perangkat PC
+Contoh: PC3a ke PC4b
 
-   `tracert`
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/17.png){: .normal }
 
-   Contoh: PC3a ke PC4b
+> **Catatan:**
+> Paket akan dilewatkan ke alamat gateway jaringan sumber sebelum sampai ke alamat jaringan tujuan.
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/17.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/18.png){: .normal }
 
-   > **Catatan:**
-   > Paket akan dilewatkan ke alamat gateway jaringan sumber sebelum sampai ke alamat jaringan tujuan.
+## Langkah Kerja Metode Router-on-a-Stick (ROAS)
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/18.png){: .normal }
+Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
 
-## Metode Router-on-a-Stick (ROAS)
+1. Persiapan,
+2. Konfigurasi, dan
+3. Pengujian.
 
-### Persiapan
+### 1. Persiapan
 
 #### Topologi Jaringan
 
@@ -362,134 +366,130 @@ Contoh: PC1b ke PC2a
 | InterVLAN3 | Fa0/0.222 | 222     | 10.22.1xx.1   | 255.255.255.0 |             |
 | InterVLAN3 | Fa0/0.333 | 333     | 10.33.1xx.1   | 255.255.255.0 |             |
 
-### Konfigurasi
+### 2. Konfigurasi
 
-#### Sw3
+#### Langkah ke-1: [Switch: Sw3] Inisialisasi VLAN
 
-1. Inisialisasi VLAN
+```console
+Switch>enable
+Switch#configure terminal
+Switch(config)#hostname Sw3
+Sw3(config)#vlan 111
+Sw3(config-vlan)#name eng_softw
+Sw3(config-vlan)#exit
+Sw3(config)#vlan 222
+Sw3(config-vlan)#name eng_mecha
+Sw3(config-vlan)#exit
+Sw3(config)#vlan 333
+Sw3(config-vlan)#name eng_elect
+Sw3(config-vlan)#exit
+Sw3(config)#
+```
 
-   ```console
-   Switch>enable
-   Switch#configure terminal
-   Switch(config)#hostname Sw3
-   Sw3(config)#vlan 111
-   Sw3(config-vlan)#name eng_softw
-   Sw3(config-vlan)#exit
-   Sw3(config)#vlan 222
-   Sw3(config-vlan)#name eng_mecha
-   Sw3(config-vlan)#exit
-   Sw3(config)#vlan 333
-   Sw3(config-vlan)#name eng_elect
-   Sw3(config-vlan)#exit
-   Sw3(config)#
-   ```
+#### Langkah ke-2: [Switch: Sw3] Atur Keanggotaan VLAN
 
-1. Atur Keanggotaan VLAN
+```console
+Sw3(config)#interface range fastEthernet 0/1-6
+Sw3(config-if-range)#switchport mode access
+Sw3(config-if-range)#switchport access vlan 111
+Sw3(config-if-range)#exit
+Sw3(config)#interface range fastEthernet 0/7-12
+Sw3(config-if-range)#switchport mode access
+Sw3(config-if-range)#switchport access vlan 222
+Sw3(config-if-range)#exit
+Sw3(config)#interface range fastEthernet 0/13-18
+Sw3(config-if-range)#switchport mode access
+Sw3(config-if-range)#switchport access vlan 333
+Sw3(config-if-range)#exit
+Sw3(config)#
+```
 
-   ```console
-   Sw3(config)#interface range fastEthernet 0/1-6
-   Sw3(config-if-range)#switchport mode access
-   Sw3(config-if-range)#switchport access vlan 111
-   Sw3(config-if-range)#exit
-   Sw3(config)#interface range fastEthernet 0/7-12
-   Sw3(config-if-range)#switchport mode access
-   Sw3(config-if-range)#switchport access vlan 222
-   Sw3(config-if-range)#exit
-   Sw3(config)#interface range fastEthernet 0/13-18
-   Sw3(config-if-range)#switchport mode access
-   Sw3(config-if-range)#switchport access vlan 333
-   Sw3(config-if-range)#exit
-   Sw3(config)#
-   ```
+#### Langkah ke-3: [Switch: Sw3] Atur Interface Trunk Link
 
-1. Atur Interface Trunk Link
+```console
+Sw3(config)#interface fastEthernet 0/24
+Sw3(config-if)#switchport mode trunk
+Sw3(config-if)#exit
+Sw3(config)#end
+Sw3#copy running-config startup-config
+Sw3#
+```
 
-   ```console
-   Sw3(config)#interface fastEthernet 0/24
-   Sw3(config-if)#switchport mode trunk
-   Sw3(config-if)#exit
-   Sw3(config)#end
-   Sw3#copy running-config startup-config
-   Sw3#
-   ```
+#### Langkah ke-4: [Switch: Sw3] Konfirmasi Konfigurasi VLAN
 
-1. Konfirmasi Konfigurasi VLAN
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/20.png){: .normal }
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/20.png){: .normal }
+#### Langkah ke-5: [Router: InterVLAN3] Aktivasi interface ke Switch
 
-#### Router: InterVLAN3
+```console
+Router>enable
+Router#configure terminal
+Router(config)#hostname InterVLAN3
+InterVLAN3(config)#interface fastEthernet 0/0
+InterVLAN3(config-if)#no shutdown
+InterVLAN3(config-if)#exit
+InterVLAN3(config)#
+```
 
-1. Aktivasi interface ke Switch
+#### Langkah ke-6: [Router: InterVLAN3] Konfigurasi Alamat IP
 
-   ```console
-   Router>enable
-   Router#configure terminal
-   Router(config)#hostname InterVLAN3
-   InterVLAN3(config)#interface fastEthernet 0/0
-   InterVLAN3(config-if)#no shutdown
-   InterVLAN3(config-if)#exit
-   InterVLAN3(config)#
-   ```
+```console
+InterVLAN3(config)#interface fastEthernet 0/0.111
+InterVLAN3(config-subif)#encapsulation dot1q 111
+InterVLAN3(config-subif)#ip address 10.11.199.1 255.255.255.0
+InterVLAN3(config-subif)#exit
+InterVLAN3(config)#interface fastEthernet 0/0.222
+InterVLAN3(config-subif)#encapsulation dot1q 222
+InterVLAN3(config-subif)#ip address 10.22.199.1 255.255.255.0
+InterVLAN3(config-subif)#exit
+InterVLAN3(config)#interface fastEthernet 0/0.333
+InterVLAN3(config-subif)#encapsulation dot1q 333
+InterVLAN3(config-subif)#ip address 10.33.199.1 255.255.255.0
+InterVLAN3(config-subif)#exit
+InterVLAN3(config)#end
+InterVLAN3#copy running-config startup-config
+InterVLAN3#
+```
 
-1. Konfigurasi Alamat IP
+> **Catatan:**
+> Disebut dengan istilah Router on A Stick (ROAS) karena proses routing dilakukan dengan menghubungkan Router ke Switch secara fisik dengan menggunakan sebuah kabel, sedangkan interface dikonfigurasi secara logical menjadi sub-sub interface (contoh fa 0/0.xx) atau interface virtual.
 
-   ```console
-   InterVLAN3(config)#interface fastEthernet 0/0.111
-   InterVLAN3(config-subif)#encapsulation dot1q 111
-   InterVLAN3(config-subif)#ip address 10.11.199.1 255.255.255.0
-   InterVLAN3(config-subif)#exit
-   InterVLAN3(config)#interface fastEthernet 0/0.222
-   InterVLAN3(config-subif)#encapsulation dot1q 222
-   InterVLAN3(config-subif)#ip address 10.22.199.1 255.255.255.0
-   InterVLAN3(config-subif)#exit
-   InterVLAN3(config)#interface fastEthernet 0/0.333
-   InterVLAN3(config-subif)#encapsulation dot1q 333
-   InterVLAN3(config-subif)#ip address 10.33.199.1 255.255.255.0
-   InterVLAN3(config-subif)#exit
-   InterVLAN3(config)#end
-   InterVLAN3#copy running-config startup-config
-   InterVLAN3#
-   ```
+#### Langkah ke-7: [Router: InterVLAN3] Konfirmasi Alamat IP
 
-   > **Catatan:**
-   > Disebut dengan istilah Router on A Stick (ROAS) karena proses routing dilakukan dengan menghubungkan Router ke Switch secara fisik dengan menggunakan sebuah kabel, sedangkan interface dikonfigurasi secara logical menjadi sub-sub interface (contoh fa 0/0.xx) atau interface virtual.
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/21.png){: .normal }
 
-1. Konfirmasi Alamat IP
+#### Langkah ke-8: [PC] Konfigurasi Alamat IP
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/21.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/22.png){: .normal }
 
-#### PC
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/23.png){: .normal }
 
-1. Konfigurasi Alamat IP
+#### Langkah ke-9: [PC] Konfirmasi Alamat IP
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/22.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/24.png){: .normal }
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/23.png){: .normal }
+### 3. Pengujian
 
-1. Konfirmasi Alamat IP
+#### Langkah ke-1: [PC] Uji jaringan VLAN ID sama
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/24.png){: .normal }
+Contoh: PC5a ke PC5b
 
-### Pengujian
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/25.png){: .normal }
 
-1. Uji jaringan VLAN ID sama
+#### Langkah ke-2: [PC] Uji jaringan VLAN ID berbeda
 
-   Contoh: PC5a ke PC5b
+Contoh: PC6 ke PC7
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/25.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/26.png){: .normal }
 
-1. Uji jaringan VLAN ID berbeda
+#### Langkah ke-3: [Router] Melacak pengiriman paket pada perangkat Router dari sumber ke tujuan
 
-   Contoh: PC6 ke PC7
+Contoh: Router ke masing-masing PC
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/26.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/27.png){: .normal }
 
-1. Melacak pengiriman paket pada perangkat Router dari sumber ke tujuan
+#### Langkah ke-4: [PC] Melacak pengiriman paket pada perangkat PC dari sumber ke tujuan
 
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/27.png){: .normal }
+Contoh: PC5a ke PC7
 
-1. Melacak pengiriman paket pada perangkat PC dari sumber ke tujuan
-
-   Contoh: PC5a ke PC7
-
-   ![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/28.png){: .normal }
+![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/28.png){: .normal }

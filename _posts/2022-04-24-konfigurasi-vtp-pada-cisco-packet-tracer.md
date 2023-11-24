@@ -59,7 +59,7 @@ Perintah yang digunakan pada praktikum kali ini yaitu:
 
 ## Langkah Kerja
 
-Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
+Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
 
 1. Persiapan
 2. Konfigurasi dan Konfirmasi
