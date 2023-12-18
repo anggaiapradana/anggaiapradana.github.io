@@ -13,7 +13,7 @@ Setiap perangkat jaringan harus memiliki alamat IP unik agar bisa saling terkone
 
 Alamat IP bertindak sebagai identitas unik bagi setiap perangkat, seperti komputer, printer, atau router, dan memungkinkan data untuk diteruskan dari satu perangkat ke perangkat lain.
 
-![](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/01.png){: .normal }
 
 Alamat IP ditempatkan pada lapisan jaringan (Network Layer) dari arsitektur model OSI (Open System Interconnection).
 
@@ -25,11 +25,11 @@ Oleh karena itu, alamat IP adalah bagian penting dari kinerja dan efisiensi jari
 
 Format penulisan alamat IP Address `x.x.x.x`, di mana `x` bisa bernilai angka desimal `0` s.d. `255`.
 
-![](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/02.png){: .normal }
 
 Dalam 1 oktet atau 8 bit/biner dalam penyimpanan perangkat komputer senilai dengan 1 byte
 
-![](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/03.png){: .normal }
 
 Maka, berapa byte-kah ukuran penyimpanan sebuah alamat IP?
 
@@ -44,15 +44,15 @@ Informasi IP Address pada suatu Network Interface perangkat komputer dapat ditam
 
 1. Linux menggunakan perintah Terminal `ip addr`
 
-   ![](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/04.png){: .normal }
 
 2. macOS menggunakan perintah Terminal `ifconfig`
 
-   ![](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/05.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/05.png){: .normal }
 
 3. Windows menggunakan perintah Command Prompt `ipconfig`
 
-   ![](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/06.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/06.png){: .normal }
 
 > **Catatan:**
 > Untuk selanjutnya, pembahasan IP Address akan spesifik pada IPv4.
@@ -63,7 +63,7 @@ Public IP Address adalah pengalamatan yang digunakan oleh perangkat yang terhubu
 
 Private IP Address adalah pengalamatan yang hanya digunakan oleh perangkat yang berkomunikasi dalam sebuah LAN (jaringan sekolah, jaringan kantor) dan tidak bisa terhubung langsung ke internet.
 
-![](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/07.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-05-konversi-desimal-biner-pada-perhitungan-ip-address/07.png){: .normal }
 
 Berikut merupakan range yang digunakan untuk pengalamatan IP Private.
 

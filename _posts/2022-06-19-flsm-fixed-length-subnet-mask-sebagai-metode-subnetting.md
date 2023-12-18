@@ -26,7 +26,7 @@ Gunakan kembali [tabel subnetting](/posts/pembagian-alamat-pada-jaringan-kompute
 
 Sebuah jaringan dirancang untuk digunakan dalam sebuah gedung kantor yang terdiri dari beberapa pembagian jaringan.
 
-![](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/01.png){: .normal }
 
 Tentukan pembagian jaringan (subnet) menggunakan metode FLSM bila diberikan IP Address **10.1.1.0/24** sebagai acuan!
 
@@ -86,16 +86,16 @@ Tentukan pembagian jaringan (subnet) menggunakan metode FLSM bila diberikan IP A
 
 Hasil subnetting pada jaringan di atas menggunakan metode FLSM sebagai berikut
 
-![](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/02.png){: .normal }
 
 Jika dimasukkan ke dalam topologi jaringan maka menjadi
 
-![](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/03.png){: .normal }
 
 ## Berlatih
 
 Anda merupakan seorang network administrator suatu perusahaan yang sedang merencakan pembagian jaringan.
 
-![](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-19-flsm-fixed-length-subnet-mask-sebagai-metode-subnetting/04.png){: .normal }
 
 Tentukan pembagian jaringan (subnet) menggunakan metode FLSM jika diberikan IP Address **172.16.0.0/16** sebagai acuan!

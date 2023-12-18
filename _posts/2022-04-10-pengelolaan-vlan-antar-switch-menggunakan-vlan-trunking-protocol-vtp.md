@@ -37,11 +37,11 @@ Dengan VTP ini, administrator jaringan dapat mengelola VLAN secara efisien dan m
 
    Misalnya seperti ini
 
-   ![](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/01.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/01.png){: .normal }
 
    ataupun juga begini
 
-   ![](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/02.png){: .normal }
 
    sedangkan,
 
@@ -51,11 +51,11 @@ Dengan VTP ini, administrator jaringan dapat mengelola VLAN secara efisien dan m
 
    Contohnya seperti ini
 
-   ![](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/03.png){: .normal }
 
    maupun begini
 
-   ![](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/04.png){: .normal }
 
 ## Mode pada VTP
 
@@ -101,7 +101,7 @@ Pembatasan domain VTP juga membantu dalam memisahkan jaringan switch yang berbed
 
 Misalnya, jika ada dua jaringan switch yang berbeda dengan domain VTP yang berbeda, maka mereka tidak akan saling mempengaruhi dan saling berbagi informasi tentang VLAN.
 
-![](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/05.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/05.png){: .normal }
 
 ## Advertisement
 
@@ -135,7 +135,7 @@ Berikut adalah beberapa jenis paket yang dikirimkan dalam proses Advertisement V
 
 Packet pada VTP di atas akan dikirimkan keluar masuk melalui trunk link / media transmisi yang digunakan antar perangkat Switch.
 
-![](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/06.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-10-pengelolaan-vlan-antar-switch-menggunakan-vlan-trunking-protocol-vtp/06.png){: .normal }
 
 ## Sinkronisasi Database
 

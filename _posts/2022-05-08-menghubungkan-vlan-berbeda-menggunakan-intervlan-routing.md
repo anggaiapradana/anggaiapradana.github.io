@@ -11,7 +11,7 @@ tags: [cisco, routing, vlan]
 
 Routing adalah proses pengiriman data dari satu jaringan ke jaringan lain. Dalam hal ini (InterVLAN Routing), yang disebut sebagai jaringan yaitu suatu VLAN (pembagian jaringan secara logical).
 
-![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/04.png){: .normal }
 
 Maka bisa disimpulkan bahwa sederhananya InterVLAN Routing adalah proses pengiriman data dari suatu VLAN ke VLAN lain, sehingga end device yang terdaftar sebagai anggota VLAN ID yang berbeda dapat saling terhubung.
 
@@ -117,7 +117,7 @@ Berikut beberapa metode konfigurasi yang bisa diimplementasikan untuk membangun 
 
 1. Metode 1: Multi-Layer Switching
 
-   ![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/01.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/01.png){: .normal }
 
    Multi-Layer Switching adalah metode routing antara VLAN yang menggunakan perangkat layer 3 switch. Alamat ip akan diinputkan pada suatu Interface VLAN (Switch Virtual Interface/SVI) sehingga dapat digunakan sebagai gateway suatu jaringan.
 
@@ -141,7 +141,7 @@ Berikut beberapa metode konfigurasi yang bisa diimplementasikan untuk membangun 
 
 2. Metode 2: Legacy InterVLAN Routing
 
-   ![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/02.png){: .normal }
 
    Legacy Inter-VLAN Routing adalah metode routing antara VLAN yang menggunakan banyak interface router, masing-masing terhubung ke port switch di VLAN yang berbeda. Interface router ini berfungsi sebagai gateway, yang membutuhkan kabel tambahan jika jaringan harus diperluas.
 
@@ -163,7 +163,7 @@ Berikut beberapa metode konfigurasi yang bisa diimplementasikan untuk membangun 
 
 3. Metode 3: Router-on-a-Stick (RoaS)
 
-   ![](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-05-08-menghubungkan-vlan-berbeda-menggunakan-intervlan-routing/03.png){: .normal }
 
    RoaS adalah metode yang menggunakan satu interface fisik router untuk menghubungkan ke switch. Interface fisik router tersebut kemudian dibagi menjadi beberapa subinterface, satu untuk setiap VLAN yang ingin dihubungkan. Subinterface inilah yang digunakan sebagai gateway.
 

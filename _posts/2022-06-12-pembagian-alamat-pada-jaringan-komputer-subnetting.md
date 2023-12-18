@@ -19,11 +19,11 @@ Subnetting menghasilkan sub-jaringan yang terisolasi dan memungkinkan komunikasi
 
 Analogi jika tanpa subnet,
 
-![](/assets/img/2022-06-12-pembagian-alamat-pada-jaringan-komputer-subnetting/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-12-pembagian-alamat-pada-jaringan-komputer-subnetting/01.png){: .normal }
 
 sedangkan jika dengan subnet,
 
-![](/assets/img/2022-06-12-pembagian-alamat-pada-jaringan-komputer-subnetting/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-12-pembagian-alamat-pada-jaringan-komputer-subnetting/02.png){: .normal }
 
 ## Kebutuhan
 
@@ -403,4 +403,4 @@ untuk alamat IP berikut!
 
 Informasi tentang perhitungan subnetting secara cepat dapat diperolah dari tabel berikut.
 
-![](/assets/img/2022-06-12-pembagian-alamat-pada-jaringan-komputer-subnetting/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-12-pembagian-alamat-pada-jaringan-komputer-subnetting/03.png){: .normal }

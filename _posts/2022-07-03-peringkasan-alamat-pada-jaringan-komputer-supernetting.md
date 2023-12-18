@@ -13,7 +13,7 @@ Supernetting, juga dikenal sebagai IP Routing Summarization, adalah teknik agreg
 
 Teknik ini menggabungkan beberapa alamat IP menjadi satu alamat IP besar yang lebih sederhana, sehingga mengurangi jumlah informasi yang harus diteruskan melalui jaringan.
 
-![](/assets/img/2022-07-03-peringkasan-alamat-pada-jaringan-komputer-supernetting/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-03-peringkasan-alamat-pada-jaringan-komputer-supernetting/01.png){: .normal }
 
 ## Kebutuhan
 
@@ -35,7 +35,7 @@ namun juga ada beberapa konsekuensi lain seperti
 
 Tentukan IP routing summarization untuk jaringan-jaringan berikut menjadi sebuah destination network!
 
-![](/assets/img/2022-07-03-peringkasan-alamat-pada-jaringan-komputer-supernetting/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-03-peringkasan-alamat-pada-jaringan-komputer-supernetting/02.png){: .normal }
 
 ## Solusi
 

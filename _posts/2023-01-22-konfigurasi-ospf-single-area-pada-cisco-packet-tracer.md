@@ -43,7 +43,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 Susun topologi jaringan routing sebagai berikut
 
-![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/01.png){: .normal }
 
 #### Spesifikasi
 
@@ -115,7 +115,7 @@ Susun topologi jaringan routing sebagai berikut
 
 2. Konfigurasi dhcp server
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/02.png){: .normal }
 
 3. Konfigurasi routing ospf
 
@@ -137,92 +137,92 @@ Susun topologi jaringan routing sebagai berikut
 
 1. Konfigurasi alamat ip
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/03.png){: .normal }
 
 2. Konfigurasi routing ospf
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/04.png){: .normal }
 
 #### R3
 
 1. Konfigurasi alamat ip
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/05.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/05.png){: .normal }
 
 1. Konfigurasi dhcp server
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/06.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/06.png){: .normal }
 
 1. Konfigurasi routing ospf
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/07.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/07.png){: .normal }
 
 #### PC-server
 
 1.  Konfigurasi alamat ip
 
-    ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/08.png){: .normal }
+    ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/08.png){: .normal }
 
 2.  Konfigurasi mail server
 
-    ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/09.png){: .normal }
+    ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/09.png){: .normal }
 
 #### PC-admin
 
 1. Konfigurasi alamat ip
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/10.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/10.png){: .normal }
 
 2. Konfigurasi mail client
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/11.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/11.png){: .normal }
 
 #### PC-client
 
 1. Konfigurasi alamat ip
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/12.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/12.png){: .normal }
 
 2. Konfigurasi mail client
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/13.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/13.png){: .normal }
 
 ### Pengujian
 
 1. Menampilkan routing table di router R1, R2, R3
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/14a.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/14a.png){: .normal }
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/14b.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/14b.png){: .normal }
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/14c.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/14c.png){: .normal }
 
    > **Catatan:**
    > Kode `O` merupakan indikator jaringan dari router lain yang mengaktifkan protocol routing OSPF.
 
 2. Mengirim perintah ping dari PC client1 ke PC mail server dan client3
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/15.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/15.png){: .normal }
 
 3. Mengirim perintah ping dari PC client4 ke PC admin dan client2
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/16.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/16.png){: .normal }
 
 4. Mengirim email dari PC client1 ke PC admin
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/17a.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/17a.png){: .normal }
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/17b.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/17b.png){: .normal }
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/17c.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/17c.png){: .normal }
 
 5. Membalas email dari PC admin ke dan client1
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/18a.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/18a.png){: .normal }
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/18b.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/18b.png){: .normal }
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/18c.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/18c.png){: .normal }
 
 6. Lakukan langkah yang sama untuk menguji jaringan dari PC yang lain
 
@@ -232,45 +232,45 @@ Susun topologi jaringan routing sebagai berikut
 
 1. Konfigurasi dns server
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/19.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/19.png){: .normal }
 
 1. Tambahkan alamat dns server
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/20.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/20.png){: .normal }
 
 #### PC-admin
 
 1. Tambahkan alamat dns server
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/21.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/21.png){: .normal }
 
 1. Gunakan domain pada konfigurasi mail client
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/22.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/22.png){: .normal }
 
 #### R1
 
 1. Tambahkan alamat dns server pada dhcp pool
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/23.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/23.png){: .normal }
 
 #### R3
 
 1. Tambahkan alamat dns server pada dhcp pool
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/24.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/24.png){: .normal }
 
 #### PC-client
 
 1. Request ulang alamat ip, dhcp->static->dhcp
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/25.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/25.png){: .normal }
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/25a.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/25a.png){: .normal }
 
 1. Gunakan domain pada konfigurasi mail client
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/26.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/26.png){: .normal }
 
 ### Pengujian Ulang
 
@@ -282,7 +282,7 @@ Sebagai bahan latihan, lakukan konfigurasi OSPF dengan instruksi sebagai berikut
 
 1. Rancang topologi jaringan routing OSPF sebagai berikut
 
-   ![](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/27.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-22-konfigurasi-ospf-single-area-pada-cisco-packet-tracer/27.png){: .normal }
 
    dengan spesifikasi sebagai berikut
 

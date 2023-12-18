@@ -119,7 +119,7 @@ Berikut contoh perangkat/layanan pada application layer
 
 Model OSI merupakan kerangka teoritis yang digunakan sebagai acuan dalam memahami komunikasi jaringan secara umum. Namun, dalam implementasinya di dunia nyata, jaringan sering kali menghadirkan kompleksitas yang lebih tinggi. Implementasi ini bisa melibatkan berbagai lapisan secara simultan atau mengadopsi protokol serta teknologi spesifik yang sesuai dengan kebutuhan yang ada.
 
-![](/assets/img/2022-01-16-osi-open-systems-interconnection-layers-pada-jaringan/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-01-16-osi-open-systems-interconnection-layers-pada-jaringan/01.png){: .normal }
 
 Dalam dunia yang terus berkembang ini, Model OSI tetap menjadi landasan penting, memberikan pemahaman mendalam tentang komunikasi jaringan. Meskipun implementasi jaringan bisa jauh lebih kompleks, pemahaman tentang prinsip-prinsip Model OSI tetap menjadi kunci untuk mengelola dan mengoptimalkan koneksi jaringan.
 

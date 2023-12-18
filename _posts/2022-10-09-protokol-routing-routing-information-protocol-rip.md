@@ -37,7 +37,7 @@ RIP menggunakan metric, seperti jumlah hop, untuk menghitung jalur terbaik untuk
 
 Paket dikirim di sepanjang jalur dengan hop terendah.
 
-![](/assets/img/2022-10-09-protokol-routing-routing-information-protocol-rip/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-09-protokol-routing-routing-information-protocol-rip/01.png){: .normal }
 
 ## Karakteristik
 

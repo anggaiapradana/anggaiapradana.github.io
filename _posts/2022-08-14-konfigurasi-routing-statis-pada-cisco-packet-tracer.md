@@ -42,7 +42,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 #### Topologi Jaringan
 
-![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/01.png){: .normal }
 
 #### Spesifikasi
 
@@ -93,12 +93,12 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 #### PC1a
 
 1. Konfigurasi alamat ip
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/02.png){: .normal }
 
 #### PC1b
 
 1. Konfigurasi alamat ip
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/03.png){: .normal }
 
 #### R0
 
@@ -168,13 +168,13 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 1. Konfigurasi alamat ip
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/04.png){: .normal }
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/05.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/05.png){: .normal }
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/06.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/06.png){: .normal }
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/07.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/07.png){: .normal }
 
 ### Pengujian
 
@@ -184,13 +184,13 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
    > show ip route
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/08.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/08.png){: .normal }
 
 #### R1
 
 1. Uji konfigurasi
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/09.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/09.png){: .normal }
 
 #### PC1a
 
@@ -200,7 +200,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
    contoh: dari PC1a ke PC2a
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/10.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/10.png){: .normal }
 
 #### PC2c
 
@@ -210,7 +210,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
    contoh: dari PC2c ke PC1b
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/11.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/11.png){: .normal }
 
 ## Berlatih
 
@@ -218,7 +218,7 @@ Sebagai bahan latihan, lakukan konfigurasi routing statis dengan instruksi sebag
 
 1. Rancang [topologi jaringan routing statis](/assets/pkt/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/konfigurasi-routing-statis-berlatih.pkt) sebagai berikut.
 
-   ![](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/12.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-14-konfigurasi-routing-statis-pada-cisco-packet-tracer/12.png){: .normal }
 
 1. Rancang IP Address table maupun IP Routing table.
 1. Konfigurasikan metode routing statis secara lengkap

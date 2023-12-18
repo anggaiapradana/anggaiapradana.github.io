@@ -63,7 +63,7 @@ Beberapa istilah yang penting untuk mengonfigurasi routing statis pada jaringan,
 
    Untuk routing statis, jaringan yang dianggap sebagai destination network yaitu jaringan tidak langsung/remote network.
 
-   ![](/assets/img/2022-08-07-routing-statis-pada-jaringan-komputer/01.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-07-routing-statis-pada-jaringan-komputer/01.png){: .normal }
 
 1. Next Hop
 
@@ -71,7 +71,7 @@ Beberapa istilah yang penting untuk mengonfigurasi routing statis pada jaringan,
 
    Konsep interface Next Hop sama dengan Default Gateway ketika melakukan konfigurasi suatu PC Client.
 
-   ![](/assets/img/2022-08-07-routing-statis-pada-jaringan-komputer/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-08-07-routing-statis-pada-jaringan-komputer/02.png){: .normal }
 
 ## Karakteristik
 
@@ -133,7 +133,7 @@ Berikut adalah beberapa kekurangan dari routing statis
 
 Suatu jaringan disusun seperti topologi jaringan routing statis berikut,
 
-![](/assets/img/2022-08-07-routing-statis-pada-jaringan-komputer/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-08-07-routing-statis-pada-jaringan-komputer/03.png){: .normal }
 
 Tentukan routing table untuk setiap perangkat Router
 

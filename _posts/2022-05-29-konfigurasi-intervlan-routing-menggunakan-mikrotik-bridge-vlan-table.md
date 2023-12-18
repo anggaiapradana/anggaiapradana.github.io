@@ -11,8 +11,8 @@ tags: [mikrotik, routing, vlan, subnetting]
 
 InterVLAN Routing menggunakan MikroTik dapat dilakukan dengan beberapa metode, yaitu
 
-1.  Bridge VLAN Table
-2.  Switch Chip (hanya untuk interface port ethernet)
+1. Bridge VLAN Table
+2. Switch Chip (hanya untuk interface port ethernet)
 
 Praktikum berikut menggunakan port wlan selain ether, oleh karena itu akan menggunakan metode bridge vlan table.
 
@@ -45,7 +45,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 
 #### Topologi jaringan
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top1.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top1.jpg){: .normal }
 
 #### Spesifikasi
 
@@ -102,165 +102,165 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 
 #### Langkah ke-01: pasang kabel pada port eth4 untuk remote
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r1.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r1.jpg){: .normal }
 
 #### Langkah ke-02: login pada mikrotik
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r2a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r2b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r2a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r2b.png){: .normal }
 
 #### Langkah ke-03: ganti hostname
 
 > Menu: System > Identity
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r3.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r3.png){: .normal }
 
 #### Langkah ke-04: tambah interface vlan
 
 > Menu: Interfaces > Interface > + > VLAN
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r4.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r4.png){: .normal }
 
 #### Langkah ke-05: buat interface vlan sesuai spesifikasi
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5b.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5c.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5d.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5c.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r5d.png){: .normal }
 
 #### Langkah ke-06: konfigurasi alamat ip pada vlan (nantinya sebagai gateway)
 
 > Menu: IP > Addresses > Address List > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6b.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6c.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6d.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6c.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r6d.png){: .normal }
 
 #### Langkah ke-07: konfigurasi dhcp server untuk vlan
 
 > Menu: IP > DHCP Server > DHCP > DHCP Setup
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7b.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7c.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7d.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7e.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7f.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7g.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7h.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7c.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7d.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7e.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7f.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7g.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r7h.png){: .normal }
 
 #### Langkah ke-08: definisikan security profile
 
 > Menu: Wireless > Security Profile > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r8.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r8.png){: .normal }
 
 #### Langkah ke-09: aktivasi wlan1
 
 > Menu: Wireless > WiFi Interfaces > wlan1 > ✔
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r9.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r9.png){: .normal }
 
 #### Langkah ke-10: koneksikan router vlan dengan router internet
 
 > Klik ganda wlan1, pindah ke tab Wireless
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r10.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r10.png){: .normal }
 
 #### Langkah ke-11: konfigurasi alamat ip pada wlan
 
 > Menu: IP > Addresses > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r11.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r11.png){: .normal }
 
 #### Langkah ke-12: konfirmasi koneksi router vlan dengan router internet
 
 > Menu: Terminal > ping 172.16.1.1
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r12.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r12.png){: .normal }
 
 #### Langkah ke-13: dapatkan koneksi internet untuk router vlan
 
 Menu: IP > Firewall > NAT > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r13a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r13b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r13a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r13b.png){: .normal }
 
 #### Langkah ke-14: konfigurasi default route
 
 > Menu: IP > Routes > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r14.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r14.png){: .normal }
 
 #### Langkah ke-15: konfigurasi dns server
 
 Menu: IP > DNS > tambahkan alamat router internet
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r15.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r15.png){: .normal }
 
 #### Langkah ke-16: konfirmasi koneksi router vlan dengan internet
 
 Menu: Terminal > ping 8.8.8.8 dan ping google.com
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r16.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/r16.png){: .normal }
 
 ### 3. Konfigurasi Switch
 
 #### Langkah ke-01: pindah kabel dari eth4 router ke eth4 switch untuk remote
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s1.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s1.jpg){: .normal }
 
 #### Langkah ke-02: pasang kabel pada port eth1 untuk trunk, penghubung dari router ke switch
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s2.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s2.jpg){: .normal }
 
 #### Langkah ke-03: login pada mikrotik
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s3.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s3.png){: .normal }
 
 #### Langkah ke-04: ganti hostname
 
 > Menu: System > Identity
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s4.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s4.png){: .normal }
 
 #### Langkah ke-05: aktifkan interface bridge
 
 > Menu: Bridge > Bridge > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s5.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s5.png){: .normal }
 
 #### Langkah ke-06: tambahkan port eth1 yang digunakan sebagai trunk
 
 > Menu: Bridge > Ports > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s6.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s6.png){: .normal }
 
 #### Langkah ke-07: tambahkan port eth2 yang digunakan sebagai anggota vlan 10
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s7a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s7b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s7a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s7b.png){: .normal }
 
 #### Langkah ke-08: tambahkan port eth3 yang digunakan sebagai anggota vlan 20
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s8a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s8b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s8a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s8b.png){: .normal }
 
 #### Langkah ke-09: tambahkan port wlan1 yang digunakan sebagai anggota vlan 30
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9b.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9c.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s9c.png){: .normal }
 
 #### Langkah ke-10: mengatur mode link: tagged untuk trunk dan untagged untuk access
 
 > Menu: Bridge > VLANs > +
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10b.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10c.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10d.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10c.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s10d.png){: .normal }
 
 #### Langkah ke-11: aktifkan VLAN filtering
 
@@ -268,54 +268,54 @@ Menu: Terminal > ping 8.8.8.8 dan ping google.com
 >
 > Klik ganda bridge1, pindah ke tab VLAN, klik ✔️ pada VLAN Filtering
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s11.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s11.png){: .normal }
 
 #### Langkah ke-12: aktivasi interface wlan1
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12a.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12b.png){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12c.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12a.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/s12c.png){: .normal }
 
 ### 4. Konfigurasi Client dan Pengujian
 
 #### Langkah ke-01: konfigurasi DHCP Client pada Client1
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c1a.jpg){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c1b.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c1a.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c1b.jpg){: .normal }
 
 #### Langkah ke-02: konfirmasi routing ke VLAN lain (VLAN 20) dan internet pada Client1
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c2.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c2.jpg){: .normal }
 
 #### Langkah ke-03: konfigurasi DHCP Client pada Client2
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c3.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c3.png){: .normal }
 
 #### Langkah ke-04: konfirmasi routing ke VLAN lain (VLAN 10) dan internet pada Client2
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c4.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c4.png){: .normal }
 
 #### Langkah ke-05: konfigurasi DHCP Client pada Client3a, koneksikan perangkat via wifi
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5a.jpg){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5b.jpg){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5c.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5a.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5b.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c5c.jpg){: .normal }
 
 #### Langkah ke-06: konfigurasi DHCP Client pada Client3b, koneksikan perangkat via wifi
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c6a.jpg){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c6b.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c6a.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c6b.jpg){: .normal }
 
 #### Langkah ke-07: konfirmasi routing ke VLAN lain (VLAN 10 dan VLAN 20) ke VLAN 30
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c7a.jpg){: .normal }
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c7b.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c7a.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/c7b.png){: .normal }
 
 ### 5. Berlatih
 
 #### Topologi Jaringan
 
-![](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top2.jpg){: .normal }
+![Life is My Campus](/assets/img/2022-05-29-konfigurasi-intervlan-routing-menggunakan-mikrotik-bridge-vlan-table/top2.jpg){: .normal }
 
 #### Instruksi
 

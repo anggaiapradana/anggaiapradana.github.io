@@ -124,7 +124,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 
 #### Topologi jaringan
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/01.png){: .normal }
 
 #### Spesifikasi
 
@@ -153,11 +153,11 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu
 
 Klik pada PC, buka tab Desktop, pilih menu IP Configuration
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/02.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/03.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/04.png){: .normal }
 
 #### Langkah ke-2: [Switch] konfirmasi keanggotaan default VLAN
 
@@ -168,7 +168,7 @@ Switch>enable
 Switch#show vlan brief
 ```
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/05.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/05.png){: .normal }
 
 #### Langkah ke-3: [PC] konfirmasi PC terhubung dalam 1 segmen jaringan
 
@@ -178,11 +178,11 @@ Klik pada PC, buka tab Desktop, pilih menu Command Prompt
 ping 'target'
 ```
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/06.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/06.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/07.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/07.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/08.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/08.png){: .normal }
 
 #### Langkah ke-4: [Switch] mengaktifkan VLAN baru
 
@@ -205,7 +205,7 @@ Sw1(config)#do show vlan brief
 
 > `show` dapat pula dieksekusi pada Configuration Mode dengan menambahkan `do` pada awal perintah
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/09.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/09.png){: .normal }
 
 #### Langkah ke-6: [Switch] mendaftarkan suatu port sebagai anggota VLAN baru
 
@@ -219,17 +219,17 @@ Sw1(config-if)#exit
 Sw1(config)#
 ```
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/10.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/10.png){: .normal }
 
 #### Langkah ke-7: [Switch] konfirmasi jaringan PC setelah VLAN
 
 Bandingkan hasil ping antara jaringan 1 segmen dan berbeda segmen
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/11.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/11.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/12.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/12.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/13.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/13.png){: .normal }
 
 #### Langkah ke-8: [Switch] mendaftarkan beberapa port sekaligus sebagai anggota VLAN baru
 
@@ -243,23 +243,23 @@ Sw1(config-if-range)#exit
 Sw1(config)#
 ```
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/14.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/14.png){: .normal }
 
 #### Langkah ke-9: [Switch] mengembangankan jaringan VLAN
 
 Menambahkan PC sebagai anggota VLAN
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/15.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/15.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/16.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/16.png){: .normal }
 
 #### Langkah ke-10: [PC] konfirmasi ulang PC terhubung dalam segmen sama maupun berbeda
 
 Bandingkan hasil ping antara jaringan 1 segmen dan berbeda segmen
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/17.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/17.png){: .normal }
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/18.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/18.png){: .normal }
 
 #### Langkah ke-11: [Switch] menyimpan konfigurasi terkini
 
@@ -277,7 +277,7 @@ Apabila konfigurasi VLAN berhasil diimplementasikan, hanya perangkat yang menjad
 
 Perhatikan topologi jaringan berikut!
 
-![](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/19.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-27-konfigurasi-vlan-pada-cisco-packet-tracer/19.png){: .normal }
 
 #### Spesifikasi
 
@@ -304,8 +304,8 @@ Tersedia suatu topologi jaringan di atas dengan spesifikasi berikut:
 
 Lakukan konfigurasi VLAN dengan instruksi:
 
-1.  Susun topologi jaringan di atas
-2.  Rancang tabel pengalamatan seperti contoh
-3.  Konfigurasikan VLAN sesuai spesifikasi
-4.  Lakukan pengamatan dan pengujian pada jaringan terkonfigurasi
-5.  Susun dokumentasi sesuai lembar kerja tersedia
+1. Susun topologi jaringan di atas
+2. Rancang tabel pengalamatan seperti contoh
+3. Konfigurasikan VLAN sesuai spesifikasi
+4. Lakukan pengamatan dan pengujian pada jaringan terkonfigurasi
+5. Susun dokumentasi sesuai lembar kerja tersedia

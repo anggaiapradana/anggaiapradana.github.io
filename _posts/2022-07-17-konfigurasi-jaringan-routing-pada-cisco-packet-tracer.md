@@ -52,7 +52,7 @@ Tersedia web server yang dapat diakses pada alamat
 
 > https://lms.smkn1gombong.sch.id
 
-![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/01.png){: .normal }
 
 File \*.pkt topologi jaringan dapat diunduh [di sini](/assets/pkt/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/konfigurasi-jaringan-routing-lab-smkn1gombong.pkt)
 
@@ -81,11 +81,11 @@ File \*.pkt topologi jaringan dapat diunduh [di sini](/assets/pkt/2022-07-17-kon
 
 1. Konfigurasi alamat ip
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/02.png){: .normal }
 
 2. Konfigurasi DNS Server
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/03.png){: .normal }
 
 #### Router Sekolah
 
@@ -153,19 +153,19 @@ File \*.pkt topologi jaringan dapat diunduh [di sini](/assets/pkt/2022-07-17-kon
 
 1. Konfigurasi alamat ip PC1a, PC1b
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/04.png){: .normal }
 
 1. Konfigurasi alamat ip PC2a, PC2b
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/05.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/05.png){: .normal }
 
 1. Konfigurasi alamat ip PC3a, PC3b
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/06.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/06.png){: .normal }
 
 1. Konfigurasi alamat ip PC4a, PC4b
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/07.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/07.png){: .normal }
 
 ### Pengujian
 
@@ -173,15 +173,15 @@ File \*.pkt topologi jaringan dapat diunduh [di sini](/assets/pkt/2022-07-17-kon
 
 1. Ping server (via IP)
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/08.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/08.png){: .normal }
 
 1. Ping server (via Domain)
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/09.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/09.png){: .normal }
 
 1. Akses web server via web browser via IP maupun Domain
 
-   ![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/10.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/10.png){: .normal }
 
 #### Kesimpulan
 
@@ -189,4 +189,4 @@ Jaringan lab TKJ pada SMK Negeri 1 Gombong menerapkan konfigurasi routing.
 
 Seluruh pembagian jaringan/subnet langsung terhubung pada perangkat Router utama.
 
-![](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/11.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-17-konfigurasi-jaringan-routing-pada-cisco-packet-tracer/11.png){: .normal }

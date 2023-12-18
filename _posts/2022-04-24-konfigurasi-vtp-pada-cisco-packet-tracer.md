@@ -71,7 +71,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
 
 #### Topologi jaringan
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/01.png){: .normal }
 
 #### Spesifikasi
 
@@ -155,21 +155,21 @@ SwServer(config)#
 
 #### Langkah ke-5: [SwServer] konfirmasi VLAN aktif
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/02.png){: .normal }
 
 #### Langkah ke-6: [SwServer] konfirmasi VTP aktif
 
 Informasi jumlah VLAN aktif, VTP domain, dan VTP mode.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/03.png){: .normal }
 
 Informasi VTP password.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/04.png){: .normal }
 
 #### Langkah ke-7: [SwServer] konfirmasi trunk link
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/05.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/05.png){: .normal }
 
 #### Langkah ke-8: [SwClient] aktivasi VLAN baru
 
@@ -194,21 +194,21 @@ SwClient(config)#
 
 #### Langkah ke-10: [SwClient] konfirmasi trunk link
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/06.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/06.png){: .normal }
 
 #### Langkah ke-11: [SwClient] konfirmasi VTP aktif
 
 Konfirmasi VTP password.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/07.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/07.png){: .normal }
 
 Konfirmasi jumlah VLAN aktif, VTP domain, dan VTP mode.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/08.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/08.png){: .normal }
 
 Konfirmasi sinkronisasi VLAN aktif yang diterima dari vtp server.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/09.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/09.png){: .normal }
 
 #### Langkah ke-12: [SwClient] atur port sebagai anggota VLAN
 
@@ -228,33 +228,33 @@ SwClient(config)#
 
 PC0-a, PC0-b
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/10.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/10.png){: .normal }
 
 PC1-a, PC1-b
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/11.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/11.png){: .normal }
 
 #### Langkah ke-14: [PC] hubungkan dengan Switch
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/12.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/12.png){: .normal }
 
 #### Langkah ke-15: [PC] konfirmasi alamat IP
 
 Informasi alamat IP.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/13.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/13.png){: .normal }
 
 Uji jaringan VLAN ID yang berbeda pada Switch yang sama.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/14.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/14.png){: .normal }
 
 Uji jaringan VLAN ID yang sama pada Switch yang berbeda.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/15.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/15.png){: .normal }
 
 Uji jaringan VLAN ID yang berbeda pada Switch yang berbeda.
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/16.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/16.png){: .normal }
 
 ### 3. Konfigurasi Ulang
 
@@ -262,7 +262,7 @@ Uji jaringan VLAN ID yang berbeda pada Switch yang berbeda.
 
 Kembangkan jaringan menjadi seperti berikut
 
-![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/17.png){: .normal }
+![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/17.png){: .normal }
 
 #### Spesifikasi
 
@@ -425,7 +425,7 @@ SwClient3(config)#
 
 1. Koneksikan PC lainnya dengan Switch
 
-   ![](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/18.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-04-24-konfigurasi-vtp-pada-cisco-packet-tracer/18.png){: .normal }
 
 2. Input alamat IP Address pada PC baru
 3. Konfirmasi konfigurasi VTP dan lakukan pengujian pada topologi terkini

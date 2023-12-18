@@ -39,7 +39,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 #### Topologi Jaringan
 
-![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/01.png){: .normal }
 
 #### Spesifikasi
 
@@ -137,27 +137,27 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/02.png){: .normal }
 
 2. Konfigurasi ftp server
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/03.png){: .normal }
 
 #### PC Admin, Admin2
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/04.png){: .normal }
 
 #### Router Fukushima
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/05.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/05.png){: .normal }
 
 2. Konfigurasi dhcp server
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/06.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/06.png){: .normal }
 
 3. Konfigurasi routing ospf
 
@@ -175,33 +175,33 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/07.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/07.png){: .normal }
 
 #### Router Tokyo
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/08.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/08.png){: .normal }
 
 2. Konfigurasi dhcp server
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/09.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/09.png){: .normal }
 
 3. Konfigurasi routing ospf
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/10.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/10.png){: .normal }
 
 #### PC Client3, Client4
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/11.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/11.png){: .normal }
 
 #### PC Client5, Client6
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/12.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/12.png){: .normal }
 
 ### Pengujian
 
@@ -209,36 +209,36 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
    1. Router Hokkaido
 
-      ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/13.png){: .normal }
+      ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/13.png){: .normal }
 
       > **Catatan:**
       > Kode `O IA` merupakan indikator jaringan dari router lain yang mengaktifkan protocol routing OSPF namun dengan area berbeda (inter area).
 
    2. Router Fukushima
 
-      ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/14.png){: .normal }
+      ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/14.png){: .normal }
 
    3. Router Tokyo
 
-      ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/15.png){: .normal }
+      ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/15.png){: .normal }
 
 2. Uji jaringan dengan Add Simple PDU atau perintah `ping` antar PC maupun router
 
    1. PC Admin ke PC Client1
 
-      ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/16.png){: .normal }
+      ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/16.png){: .normal }
 
    2. PC Admin2 ke PC Client3
 
-      ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/17.png){: .normal }
+      ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/17.png){: .normal }
 
    3. PC Client4 ke PC Client5
 
-      ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/18.png){: .normal }
+      ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/18.png){: .normal }
 
    4. PC Client6 ke PC Server
 
-      ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/19.png){: .normal }
+      ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/19.png){: .normal }
 
 3. Kirim file menggunakan protocol FTP
 
@@ -246,53 +246,53 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
       1. Buka Text Editor, tulis dan simpan sebagai tugas.txt
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/20.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/20.png){: .normal }
 
       1. Buka Command Prompt, akses ftp server menggunakan username ftpadmin
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/21.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/21.png){: .normal }
 
       1. Unggah tugas.txt ke ftp server
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/22.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/22.png){: .normal }
 
    2. PC Client3
 
       1. Buka Command Prompt, akses ftp server menggunakan username ftpuser
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/23.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/23.png){: .normal }
 
       2. Unduh tugas.txt dari ftp server
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/24.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/24.png){: .normal }
 
       3. Buka Text Editor, buka tugas.txt
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/25.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/25.png){: .normal }
 
       4. Edit dan simpan kembali tugas.txt
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/26.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/26.png){: .normal }
 
       5. Unggah kembali tugas.txt ke ftp server
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/27.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/27.png){: .normal }
 
    3. PC Client6
 
       1. Seperti PC Client3 menggunakan username ftpuser, unduh dan buka tugas.txt
 
-         ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/28.png){: .normal }
+         ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/28.png){: .normal }
 
 ### Konfigurasi Ulang
 
 1. Tambahkan sebuah router baru dengan area id 2, konfigurasi dengan routing protocol OSPF
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/29.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/29.png){: .normal }
 
 1. Lakukan langkah konfigurasi agar akses pada ftp server bisa menggunakan domain `ftp.dominio.net`
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/30.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/30.png){: .normal }
 
 ### Pengujian Ulang
 
@@ -308,7 +308,7 @@ Sebagai bahan latihan, lakukan konfigurasi multiarea OSPF dengan instruksi sebag
 
 1. Rancang topologi jaringan routing OSPF sebagai berikut
 
-   ![](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/31.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-01-29-konfigurasi-ospf-multi-area-pada-cisco-packet-tracer/31.png){: .normal }
 
    dengan spesifikasi sebagai berikut
 

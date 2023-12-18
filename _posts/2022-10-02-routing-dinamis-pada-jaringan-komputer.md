@@ -11,7 +11,7 @@ tags: [routing]
 
 Dapatkah terbayangkan jika harus melakukan entry routing table pada jaringan seperti ini?
 
-![](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/01.png){: .normal }
 
 Routing dinamis adalah mekanisme routing yang routing table-nya otomatis dikonfigurasi oleh routing protocol.
 
@@ -107,17 +107,17 @@ Macam-macam protokol routing dan algoritma yang digunakan adalah sebagai berikut
 
 Pembagian jenis protokol routing seperti pada bagan berikut
 
-![](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/03.png){: .normal }
 
 ### Autonomous System
 
 Autonomous System (AS) adalah alamat jaringan dijalankan oleh yang suatu operator jaringan dibawah satu kebijakan routing, contoh yang paling mudah yaitu jaringan ISP (Internet Service Provider).
 
-![](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/04.png){: .normal }
 
 Kaitannya dengan AS, Interior Gateway Protocol (IGP) diaplikasikan pada pengelolaan routing suatu jaringan dalam sebuah AS (Autonomous System), misal dalam suatu jaringan ISP.
 
-![](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/05.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/05.png){: .normal }
 
 Sedangkan jika routing jaringan yang digunakan untuk menghubungkan antar AS maka akan menggunakan Exterior Gateway Protocol (EGP).
 
@@ -125,7 +125,7 @@ Sedangkan jika routing jaringan yang digunakan untuk menghubungkan antar AS maka
 
 Algoritma protokol routing distance vector ini diibaratkan seperti papan penunjuk jalan.
 
-![](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/06.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/06.png){: .normal }
 
 Router harus memutuskan jalur paket berdasarkan distance dan vector.
 
@@ -145,7 +145,7 @@ Algoritma protokol routing link state ini dapat diibaratkan seperti peta lengkap
 
 Peta jaringan ini akan dibagi ke dalam wilayah atau akan dipetakan menggunakan area-area tertentu.
 
-![](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/07.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-02-routing-dinamis-pada-jaringan-komputer/07.png){: .normal }
 
 Protocol jenis link-state mengetahui topologi jaringan secara keseluruhan dengan mengumpulkan informasi dari setiap router.
 

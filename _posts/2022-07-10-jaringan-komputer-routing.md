@@ -11,7 +11,7 @@ tags: [routing]
 
 Dalam aturan OSI model, layer ke-3 yaitu Network yang memiliki fungsi utama pengalamatan dan routing.
 
-![](/assets/img/2022-07-10-jaringan-komputer-routing/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-10-jaringan-komputer-routing/01.png){: .normal }
 
 Routing pada jaringan berarti teknik konfigurasi yang memungkinkan komunikasi lebih dari satu jaringan, artinya terjadi pengiriman paket dari suatu jaringan ke jaringan yang lain.
 
@@ -25,7 +25,7 @@ Router sederhananya merupakan sebuah komputer yang sudah ter-install IOS (Intern
 
 Routing merupakan proses perangkat router meneruskan paket data dari suatu jaringan ke jaringan lain.
 
-![](/assets/img/2022-07-10-jaringan-komputer-routing/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-10-jaringan-komputer-routing/02.png){: .normal }
 
 Proses routing pada jaringan dapat dilakukan bila syarat berikut terpenuhi yaitu
 
@@ -56,7 +56,7 @@ Routing Default yaitu proses routing di mana router dikonfigurasi untuk dapat me
 
 Contoh dari pemanfaatan jenis routing ini adalah network administrator melakukan konfigurasi routing suatu jaringan lokal supaya bisa terhubung ke jaringan internet.
 
-![](/assets/img/2022-07-10-jaringan-komputer-routing/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-10-jaringan-komputer-routing/03.png){: .normal }
 
 ### Static Routing
 
@@ -66,7 +66,7 @@ Pendaftaran jaringan dari/pada setiap perangkat router dikonfigurasi satu per sa
 
 Jika ada perubahan topologi jaringan (perangkat, pengalamatan), maka network administrator harus melakukan konfigurasi ulang.
 
-![](/assets/img/2022-07-10-jaringan-komputer-routing/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-10-jaringan-komputer-routing/04.png){: .normal }
 
 ### Dynamic Routing
 
@@ -76,7 +76,7 @@ Dengan routing protocol maka jalur terkini pada routing table akan selalu ter-up
 
 Selanjutnya, jika suatu saat jalur utama bermasalah maka otomatis berpindah menggunakan jalur alternatif.
 
-![](/assets/img/2022-07-10-jaringan-komputer-routing/05.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-10-jaringan-komputer-routing/05.png){: .normal }
 
 ## Tipe Jaringan
 
@@ -90,7 +90,7 @@ Ada 2 macam, yaitu:
 
    jaringan ini merupakan jaringan yang tidak terhubung secara langsung, namun harus dilakukan konfigurasi routing.
 
-![](/assets/img/2022-07-10-jaringan-komputer-routing/06.png){: .normal }
+![Life is My Campus](/assets/img/2022-07-10-jaringan-komputer-routing/06.png){: .normal }
 
 Jika dilihat dari router R1, maka
 

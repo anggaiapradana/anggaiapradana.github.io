@@ -52,7 +52,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 #### Topologi Jaringan
 
-![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/01.png){: .normal }
 
 Topologi jaringan dapat diunduh [di sini](/assets/pkt/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/eigrp-praktikum-kosong.pkt){:target="\_blank"}.
 
@@ -159,7 +159,7 @@ Nomor autonomous system (AS) yang digunakan adalah xx.
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/02.png){: .normal }
 
 #### R2
 
@@ -221,11 +221,11 @@ Nomor autonomous system (AS) yang digunakan adalah xx.
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/03.png){: .normal }
 
 2. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/04.png){: .normal }
 
 #### R3
 
@@ -286,11 +286,11 @@ Nomor autonomous system (AS) yang digunakan adalah xx.
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/05.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/05.png){: .normal }
 
 1. Konfigurasi alamat ip pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/06.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/06.png){: .normal }
 
 #### R4
 
@@ -334,71 +334,71 @@ Nomor autonomous system (AS) yang digunakan adalah xx.
 
 1. Konfirmasi hasil konfigurasi alamat pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/07.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/07.png){: .normal }
 
 2. Konfirmasi hasil konfigurasi dhcp
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/08.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/08.png){: .normal }
 
 3. Konfirmasi hasil konfigurasi routing eigrp
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/09.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/09.png){: .normal }
 
 #### R2
 
 1. Konfirmasi hasil konfigurasi alamat pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/10.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/10.png){: .normal }
 
 2. Konfirmasi hasil konfigurasi dhcp
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/11.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/11.png){: .normal }
 
 3. Konfirmasi hasil konfigurasi routing eigrp
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/12.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/12.png){: .normal }
 
 #### R3
 
 1. Konfirmasi hasil konfigurasi alamat pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/13.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/13.png){: .normal }
 
 2. Konfirmasi hasil konfigurasi dhcp
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/14.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/14.png){: .normal }
 
 3. Konfirmasi hasil konfigurasi routing eigrp
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/15.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/15.png){: .normal }
 
 #### R4
 
 1. Konfirmasi hasil konfigurasi alamat pada interface
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/16.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/16.png){: .normal }
 
 2. Konfirmasi hasil konfigurasi routing eigrp
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/17.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/17.png){: .normal }
 
 #### PC-Admin
 
 1. Konfirmasi hasil konfigurasi routing eigrp ke jaringan lain menggunakan perintah `ping`
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/18.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/18.png){: .normal }
 
 #### PC-Client1
 
 1. Konfirmasi hasil konfigurasi routing eigrp ke jaringan lain menggunakan perintah `tracert`
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/19.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/19.png){: .normal }
 
 #### PC-Client3
 
 1. Konfirmasi hasil konfigurasi routing eigrp ke jaringan lain menggunakan perintah `tracert`
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/20.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/20.png){: .normal }
 
 ### Konfigurasi Ulang
 
@@ -588,31 +588,31 @@ Selanjutnya, agar dalam mengonfigurasi router dapat dilakukan secara remote (dar
 
 1. Konfirmasi remote telnet
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/21.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/21.png){: .normal }
 
 2. Konfirmasi masuk router
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/22.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/22.png){: .normal }
 
 #### PC-Client2
 
 1. Konfirmasi remote ssh
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/23.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/23.png){: .normal }
 
 2. Konfirmasi masuk router
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/24.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/24.png){: .normal }
 
 #### PC-Client4
 
 1. Konfirmasi remote ssh
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/25.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/25.png){: .normal }
 
 2. Konfirmasi masuk router
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/26.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/26.png){: .normal }
 
 #### R4
 
@@ -620,11 +620,11 @@ Selanjutnya, agar dalam mengonfigurasi router dapat dilakukan secara remote (dar
 
    memulai pengujian dengan ketik perintah `debug eigrp packet`
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/27.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/27.png){: .normal }
 
    menghentikan pengujian dengan ketik perintah `no debug all`
 
-   ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/28.png){: .normal }
+   ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/28.png){: .normal }
 
 ## Berlatih
 
@@ -632,7 +632,7 @@ Sebagai bahan latihan, lakukan konfigurasi routing EIGRP dengan instruksi sebaga
 
 1.  Rancang topolog jaringan routing EIGRP sebagai berikut
 
-    ![](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/29.png){: .normal }
+    ![Life is My Campus](/assets/img/2023-02-12-konfigurasi-eigrp-pada-cisco-packet-tracer/29.png){: .normal }
 
     dengan spesifikasi sebagai berikut
 

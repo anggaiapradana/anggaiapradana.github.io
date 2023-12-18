@@ -26,7 +26,7 @@ Gunakan kembali [tabel subnetting](/posts/pembagian-alamat-pada-jaringan-kompute
 
 Sebuah jaringan dirancang untuk digunakan dalam sebuah gedung kantor yang terdiri dari beberapa departemen dengan kebutuhan host yang beragam.
 
-![](/assets/img/2022-06-26-vlsm-variable-length-subnet-mask-sebagai-metode-subnetting/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-26-vlsm-variable-length-subnet-mask-sebagai-metode-subnetting/01.png){: .normal }
 
 Tentukan pembagian jaringan (subnet) menggunakan metode VLSM bila diberikan IP Address **192.168.10.0/24** sebagai acuan!
 
@@ -248,7 +248,7 @@ Hasil subnetting pada jaringan di atas menggunakan metode VLSM sebagai berikut
 
 Anda merupakan seorang network administrator suatu perusahaan yang sedang merencakan pembagian jaringan untuk masing-masing bidang kerja.
 
-![](/assets/img/2022-06-26-vlsm-variable-length-subnet-mask-sebagai-metode-subnetting/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-06-26-vlsm-variable-length-subnet-mask-sebagai-metode-subnetting/02.png){: .normal }
 
 Perusahaan tersebut memiliki 4 bidang kerja dengan berbagai jumlah kebutuhan alamat host sebagai berikut
 

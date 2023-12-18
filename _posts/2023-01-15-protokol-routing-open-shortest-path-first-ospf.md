@@ -47,7 +47,7 @@ OSPF (Open Shortest Path First) menggunakan algoritma Dijkstra untuk menemukan j
 
 OSPF menghitung metric atau biaya untuk setiap jalur yang mungkin dilalui, dan kemudian menggunakan algoritma Dijkstra untuk memilih jalur terpendek berdasarkan metric tersebut.
 
-![](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/01.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/01.png){: .normal }
 
 Pada umumnya, OSPF menggunakan salah satu dari dua cara menghitung metric, yaitu:
 
@@ -63,7 +63,7 @@ Pada umumnya, OSPF menggunakan salah satu dari dua cara menghitung metric, yaitu
 
    Semakin kecil delay suatu link, maka semakin kecil metric yang dihitung untuk link tersebut.
 
-![](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/02.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/02.png){: .normal }
 
 Setelah metric dari setiap link dihitung, OSPF kemudian menggunakan algoritma Dijkstra untuk menemukan jalur terpendek yang harus dilalui data.
 
@@ -145,7 +145,7 @@ Berikut ini adalah beberapa tipe paket yang dipertukarkan oleh OSPF, antara lain
 
    Jika ada informasi yang tidak lengkap atau tidak sesuai dengan yang dimiliki oleh router tersebut, maka router akan mengirimkan paket LSReq untuk meminta informasi tersebut.
 
-![](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/03.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/03.png){: .normal }
 
 ## Area
 
@@ -176,7 +176,7 @@ Berikut adalah beberapa tipe area yang ada dalam jaringan OSPF, ialah
 
    adalah Area yang hanya didesain untuk perangkat Cisco
 
-![](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/04.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/04.png){: .normal }
 
 ## Router
 
@@ -198,13 +198,13 @@ Beberapa jenis router yang dapat digunakan dalam jaringan OSPF, yaitu
 
    router yang terhubung ke backbone area dalam jaringan OSPF. Backbone area merupakan area yang terhubung ke semua area lain dalam jaringan.
 
-![](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/05.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/05.png){: .normal }
 
 ### Router Utama
 
 Router-router selalu berusaha adjacent dengan router tetangganya berdasarkan paket hello yang diterima.
 
-![](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/06.png){: .normal }
+![Life is My Campus](/assets/img/2023-01-15-protokol-routing-open-shortest-path-first-ospf/06.png){: .normal }
 
 Dalam jaringan multi access, router memilih Designated Router (DR) dan Backup Designated Router (BDR) dan mencoba adjacent dengan kedua router tersebut.
 

@@ -59,7 +59,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
 
 #### Topologi Jaringan
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/01.png){: .normal }
 
 #### Spesifikasi
 
@@ -140,19 +140,19 @@ InterVLAN1#
 
 #### Langkah ke-5: [Switch: InterVLAN1] Konfirmasi Konfigurasi VLAN
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/02.png){: .normal }
 
 #### Langkah ke-6: [PC] Konfigurasi alamat IP
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/03.png){: .normal }
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/04.png){: .normal }
 
 #### Langkah ke-7: [PC] Konfirmasi alamat IP
 
 > Command Prompt > `ipconfig`
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/05.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/05.png){: .normal }
 
 ### 3. Pengujian
 
@@ -162,13 +162,13 @@ InterVLAN1#
 
 Contoh: PC1a ke PC1b
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/06.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/06.png){: .normal }
 
 #### Langkah ke-2: Uji jaringan VLAN ID berbeda
 
 Contoh: PC1b ke PC2a
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/07.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/07.png){: .normal }
 
 ## Langkah Kerja Metode Legacy (Interface Router Berbeda Setiap VLAN)
 
@@ -182,7 +182,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
 
 #### Topologi Jaringan
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/08.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/08.png){: .normal }
 
 #### Spesifikasi
 
@@ -246,7 +246,7 @@ Sw2#
 
 #### Langkah ke-3: [Switch: Sw2] Konfirmasi Konfigurasi VLAN
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/09.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/09.png){: .normal }
 
 #### Langkah ke-4: [Router: InterVLAN2] Konfigurasi Alamat IP
 
@@ -277,15 +277,15 @@ InterVLAN2#
 
 `show running-config`
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/10.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/10.png){: .normal }
 
 #### Langkah ke-6: [PC] Konfigurasi Alamat IP
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/11.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/11.png){: .normal }
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/12.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/12.png){: .normal }
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/13.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/13.png){: .normal }
 
 ### 3. Pengujian
 
@@ -293,13 +293,13 @@ InterVLAN2#
 
 Contoh: PC3a ke PC3b
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/14.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/14.png){: .normal }
 
 #### Langkah ke-2: [PC] Uji jaringan VLAN ID berbeda
 
 Contoh: PC3b ke PC4a
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/15.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/15.png){: .normal }
 
 #### Langkah ke-3: [Router: InterVLAN2] Melacak pengiriman paket pada perangkat Router dari sumber ke tujuan
 
@@ -307,7 +307,7 @@ Contoh: PC3b ke PC4a
 
 Contoh: Router ke masing-masing PC
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/16.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/16.png){: .normal }
 
 #### Langkah ke-4: [PC] Melacak pengiriman paket dari sumber ke tujuan pada perangkat PC
 
@@ -315,12 +315,12 @@ Contoh: Router ke masing-masing PC
 
 Contoh: PC3a ke PC4b
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/17.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/17.png){: .normal }
 
 > **Catatan:**
 > Paket akan dilewatkan ke alamat gateway jaringan sumber sebelum sampai ke alamat jaringan tujuan.
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/18.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/18.png){: .normal }
 
 ## Langkah Kerja Metode Router-on-a-Stick (ROAS)
 
@@ -334,7 +334,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa tahapan yaitu:
 
 #### Topologi Jaringan
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/19.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/19.png){: .normal }
 
 #### Spesifikasi
 
@@ -417,7 +417,7 @@ Sw3#
 
 #### Langkah ke-4: [Switch: Sw3] Konfirmasi Konfigurasi VLAN
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/20.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/20.png){: .normal }
 
 #### Langkah ke-5: [Router: InterVLAN3] Aktivasi interface ke Switch
 
@@ -456,17 +456,17 @@ InterVLAN3#
 
 #### Langkah ke-7: [Router: InterVLAN3] Konfirmasi Alamat IP
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/21.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/21.png){: .normal }
 
 #### Langkah ke-8: [PC] Konfigurasi Alamat IP
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/22.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/22.png){: .normal }
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/23.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/23.png){: .normal }
 
 #### Langkah ke-9: [PC] Konfirmasi Alamat IP
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/24.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/24.png){: .normal }
 
 ### 3. Pengujian
 
@@ -474,22 +474,22 @@ InterVLAN3#
 
 Contoh: PC5a ke PC5b
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/25.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/25.png){: .normal }
 
 #### Langkah ke-2: [PC] Uji jaringan VLAN ID berbeda
 
 Contoh: PC6 ke PC7
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/26.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/26.png){: .normal }
 
 #### Langkah ke-3: [Router] Melacak pengiriman paket pada perangkat Router dari sumber ke tujuan
 
 Contoh: Router ke masing-masing PC
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/27.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/27.png){: .normal }
 
 #### Langkah ke-4: [PC] Melacak pengiriman paket pada perangkat PC dari sumber ke tujuan
 
 Contoh: PC5a ke PC7
 
-![](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/28.png){: .normal }
+![Life is My Campus](/assets/img/2022-05-22-konfigurasi-intervlan-routing-pada-cisco-packet-tracer/28.png){: .normal }

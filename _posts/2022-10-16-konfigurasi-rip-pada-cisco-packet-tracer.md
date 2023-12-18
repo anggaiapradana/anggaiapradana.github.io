@@ -41,7 +41,7 @@ Pada praktikum kali ini akan terbagi menjadi beberapa langkah yaitu Persiapan, K
 
 Susun topologi jaringan routing sebagai berikut
 
-![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/01.png){: .normal }
 
 #### Spesifikasi
 
@@ -78,33 +78,33 @@ Susun topologi jaringan routing sebagai berikut
 
 1. Input alamat ip pada interface
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/02.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/02.png){: .normal }
 
 1. Aktifkan web server
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/03.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/03.png){: .normal }
 
 1. Edit halaman index.html
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/04.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/04.png){: .normal }
 
    Simpan dengan klik tombol Save
 
 1. Aktifkan domain pada web server
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/05.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/05.png){: .normal }
 
 #### PCAdmin
 
 1. Input alamat ip pada interface
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/06.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/06.png){: .normal }
 
 #### RCore
 
 1. Input alamat ip pada interface
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/07.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/07.png){: .normal }
 
 2. Konfigurasi RIPv2
 
@@ -163,19 +163,19 @@ Susun topologi jaringan routing sebagai berikut
 
 1. Input alamat ip pada interface
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/08.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/08.png){: .normal }
 
 2. Input alamat ip pada gateway wLAN3
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/09.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/09.png){: .normal }
 
 3. Konfigurasi username password wLAN3
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/10.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/10.png){: .normal }
 
 4. Konfigurasi dhcp server
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/11.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/11.png){: .normal }
 
    Simpan dengan klik tombol Save Settings
 
@@ -183,52 +183,52 @@ Susun topologi jaringan routing sebagai berikut
 
 1. Request alamat ip pada interface
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/12.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/12.png){: .normal }
 
 #### Client Laptop pada RWireless
 
 1. Menyambungkan dengan jaringan wLAN3
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/13.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/13.png){: .normal }
 
 1. Isikan SSID dan WPA2-PSK yang sesuai
 
 1. Ubah IP Config dari DHCP ke Static Kembali ke DHCP lagi untuk merequest alamat IP wLAN3
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/14.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/14.png){: .normal }
 
 #### Client Smartphone pada RWireless
 
 1. Menyambungkan dengan jaringan wLAN3
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/15.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/15.png){: .normal }
 
 1. Isikan SSID dan WPA2-PSK yang sesuai
 
 1. Ubah IP Config dari DHCP ke Static Kembali ke DHCP lagi untuk merequest alamat IP wLAN3
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/16.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/16.png){: .normal }
 
 ### Pengujian
 
 1. Konfirmasi routing table pada RCore
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/17.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/17.png){: .normal }
 
    > **Catatan:**
    > Kode `R` merupakan indikator jaringan dari router lain yang mengaktifkan protocol routing RIP.
 
 2. Konfirmasi routing table pada RWired
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/18.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/18.png){: .normal }
 
 3. Lakukan pengujian PING dari PC1 ke PCServer maupun ke PCAdmin
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/19.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/19.png){: .normal }
 
 4. Lakukan pengujian PING dari Laptop1 ke PC1 maupun ke Smartphone1
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/20.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/20.png){: .normal }
 
 5. Lakukan pengujian Web Browser dari PC2, Laptop2 dan Smartphone2 ke kombinasi alamat berikut baik berupa ip maupun domain
 
@@ -237,7 +237,7 @@ Susun topologi jaringan routing sebagai berikut
    3. http://altavista.net
    4. https://altavista.net
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/21.png){: .normal }
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/21.png){: .normal }
 
 ## Berlatih
 
@@ -245,12 +245,12 @@ Sebagai bahan latihan, rancang topologi jaringan routing di SMKN 1 Gombong mengg
 
 1. belajar.smkn1gombong.sch.id
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/22.png)
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/22.png)
 
 2. ujian.smkn1gombong.sch.id
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/23.png)
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/23.png)
 
 3. dengan topologi jaringan sebagai berikut
 
-   ![](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/24.png)
+   ![Life is My Campus](/assets/img/2022-10-16-konfigurasi-rip-pada-cisco-packet-tracer/24.png)

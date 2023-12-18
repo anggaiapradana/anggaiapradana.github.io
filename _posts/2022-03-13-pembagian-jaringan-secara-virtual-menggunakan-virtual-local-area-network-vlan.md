@@ -13,7 +13,7 @@ VLAN (Virtual Local Area Network) merupakan metode yang memungkinkan pembagian j
 
 Teknik konfigurasi VLAN ini mengizinkan pengelompokan perangkat jaringan, seperti komputer, server, dan peralatan lainnya, menjadi beberapa kelompok yang memiliki batas logika yang jelas.
 
-![](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/01.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/01.png){: .normal }
 
 Dengan penerapan VLAN, efisiensi dalam manajemen dan kinerja jaringan bisa ditingkatkan dengan memanfaatkan pengelompokan yang cerdas dan intuitif.
 
@@ -27,11 +27,11 @@ Langkah ini memberikan manfaat signifikan dalam mengurangi kemungkinan collision
 
 Manfaat dari VLAN muncul melalui perangkat manageable switch, yang memungkinkan konfigurasi ini diterapkan dan dikelola dengan lebih efektif.
 
-![](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/02.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/02.png){: .normal }
 
 VLAN berfungsi untuk memisahkan secara logika pada tingkat switch, sedangkan subnetting berperan dalam memisahkan pada tingkat router.
 
-![](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/03.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/03.png){: .normal }
 
 ## Karakteristik
 
@@ -195,7 +195,7 @@ Perbedaan utama antara keduanya adalah bahwa Dot1Q adalah standar yang diakui se
 
 Sebuah perangkat Cisco switch dikonfigurasi Port Based VLAN sebagai berikut
 
-![](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/04.png){: .normal }
+![Life is My Campus](/assets/img/2022-03-13-pembagian-jaringan-secara-virtual-menggunakan-virtual-local-area-network-vlan/04.png){: .normal }
 
 | VLAN ID | VLAN Name  | VLAN Member     | Ket    |
 | ------- | ---------- | --------------- | ------ |
