@@ -19,7 +19,7 @@ VTP juga memungkinkan administrator jaringan untuk menambah, menghapus, dan memo
 
 1. Komputer
 2. Cisco Packet Tracer
-3. Cisco Skills for All / Akun Cisco NetAcad
+3. Akun [Cisco Skills for All](https://skillsforall.com/) / [Cisco NetAcad](https://www.netacad.com/)
 
 ## Perintah CLI
 
