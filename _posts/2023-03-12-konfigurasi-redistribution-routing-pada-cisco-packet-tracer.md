@@ -613,4 +613,5 @@ Topologi jaringan dapat diunduh [di sini](/assets/pkt/2023-03-12-konfigurasi-red
 
 Pengujian jaringan terkonfigurasi dapat dilakukan sebagai berikut:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YT9RVdppaFY?si=iWJcdNfrCbCzM5MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% include embed/{Platform}.html id='iWJcdNfrCbCzM5MU' %}
+{% include embed/youtube.html id='Balreaj8Yqs' %}
