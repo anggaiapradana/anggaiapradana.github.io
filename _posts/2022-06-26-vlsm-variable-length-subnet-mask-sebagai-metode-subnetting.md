@@ -252,10 +252,10 @@ Anda merupakan seorang network administrator suatu perusahaan yang sedang merenc
 
 Perusahaan tersebut memiliki 4 bidang kerja dengan berbagai jumlah kebutuhan alamat host sebagai berikut
 
-1. Bidang Pemasaran dengan kebutuhan 100 host,
-1. Bidang Keuangan dengan kebutuhan 25 host,
-1. Bidang Administrasi dengan kebutuhan 10 host,
-1. Bidang Sumberdaya dengan kebutuhan 35 host, dan
+1. Bidang Pemasaran dengan kebutuhan 100 host
+1. Bidang Keuangan dengan kebutuhan 25 host
+1. Bidang Administrasi dengan kebutuhan 10 host
+1. Bidang Sumberdaya dengan kebutuhan 35 host
 1. 3 buah LAN dengan kebutuhan masing-masing 2 host.
 
 Tentukan pembagian jaringan (subnet) menggunakan metode VLSM bila diberikan IP Address **172.16.0.0/24** sebagai acuan!
