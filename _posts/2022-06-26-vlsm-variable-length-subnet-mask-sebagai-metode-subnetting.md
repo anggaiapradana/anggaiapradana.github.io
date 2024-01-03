@@ -35,8 +35,8 @@ Tentukan pembagian jaringan (subnet) menggunakan metode VLSM bila diberikan IP A
 1. Urutkan berdasarkan kebutuhan host paling banyak sampai dengan paling sedikit.
 
    - Departemen B; kebutuhan 40 host.
-   - Departemen A; kebutuhan 23 host`.
-   - Departemen C; kebutuhan 14 host`.
+   - Departemen A; kebutuhan 23 host.
+   - Departemen C; kebutuhan 14 host.
    - LAN 1; kebutuhan 2 host.
    - LAN 2; kebutuhan 2 host.
 
