@@ -13,7 +13,7 @@ VLSM (Variable Length Subnet Mask) adalah metode subnetting di mana ukuran mask 
 
 ## Kebutuhan
 
-rhitungan subnet ini diawali dengan mengurutkan mulai dari jaringan dengan kebutuhan host dari yang paling banyak sampai dengan paling sedikit.
+Perhitungan subnet ini diawali dengan mengurutkan mulai dari jaringan dengan kebutuhan host dari yang paling banyak sampai dengan paling sedikit.
 
 Oleh karena itu, hal pertama yang dilakukan guna menganalisis kebutuhan host suatu network adalah paham terhadap cara menghitung total ip/total host suatu subnet berdasarkan prefix length.
 
