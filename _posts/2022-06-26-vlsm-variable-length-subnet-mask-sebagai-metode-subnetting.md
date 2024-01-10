@@ -135,12 +135,12 @@ Tentukan pembagian jaringan (subnet) menggunakan metode VLSM bila diberikan IP A
 
        Kelas C, maka porsi N.N.N.H
 
-       |            | Subnet | Subnet | Subnet | Subnet  |
-       | ---------- | ------ | ------ | ------ | ------- |
-       | Network ID | ...    | .10.0  | .10.64 | .10.96  |
-       | First Host | ...    | .10.1  | .10.65 | .10.97  |
-       | Last Host  | ...    | .10.62 | .10.94 | .10.126 |
-       | Broadcast  | ...    | .10.63 | .10.95 | .10.127 |
+       |            | Subnet | Subnet | Subnet  |
+       | ---------- | ------ | ------ | ------- |
+       | Network ID | ...    | .10.64 | .10.96  |
+       | First Host | ...    | .10.65 | .10.97  |
+       | Last Host  | ...    | .10.94 | .10.126 |
+       | Broadcast  | ...    | .10.95 | .10.127 |
 
    - **Departemen C (/28)**
 
