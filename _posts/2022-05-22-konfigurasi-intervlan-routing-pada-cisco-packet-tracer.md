@@ -21,7 +21,7 @@ Terdapat beberapa teknik konfigurasi InterVLAN Routing yang bisa dilakukan, baik
 
 ## Perintah CLI
 
-Perintah yang digunakan pada praktikum kali ini yaitu:
+Perintah CLI yang digunakan pada praktikum kali ini yaitu:
 
 1. Switch(config)#interface vlan 'vlan-id'
 

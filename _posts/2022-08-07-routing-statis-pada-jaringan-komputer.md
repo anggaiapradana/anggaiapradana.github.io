@@ -131,17 +131,17 @@ Berikut adalah beberapa kekurangan dari routing statis
 
 ## Berlatih
 
-Suatu jaringan disusun seperti topologi jaringan routing statis berikut,
+Suatu jaringan disusun seperti [topologi jaringan routing statis berikut](/assets/pkt/2022-08-07-routing-statis-pada-jaringan-komputer/konfigurasi-routing-statis-identifikasi-jalur.pkt),
 
 ![Life is My Campus](/assets/img/2022-08-07-routing-statis-pada-jaringan-komputer/03.png){: .normal }
 
 Tentukan routing table untuk setiap perangkat Router
 
-| Router | Destination Network | Subnet Mask | Next Hop |
-| ------ | ------------------- | ----------- | -------- |
-| R1     | ...                 | ...         | ...      |
-| ...    | ...                 | ...         | ...      |
-| R2     | ...                 | ...         | ...      |
-| ...    | ...                 | ...         | ...      |
-| R3     | ...                 | ...         | ...      |
-| ...    | ...                 | ...         | ...      |
+| Router  | Destination Network | Subnet Mask | Next Hop |
+| ------- | ------------------- | ----------- | -------- |
+| Router1 | ...                 | ...         | ...      |
+| ...     | ...                 | ...         | ...      |
+| Router2 | ...                 | ...         | ...      |
+| ...     | ...                 | ...         | ...      |
+| Router3 | ...                 | ...         | ...      |
+| ...     | ...                 | ...         | ...      |

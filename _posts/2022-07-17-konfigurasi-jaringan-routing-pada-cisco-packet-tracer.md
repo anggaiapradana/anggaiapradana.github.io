@@ -25,7 +25,7 @@ Karena itu, jaringan routing komputer adalah komponen penting dalam jaringan kom
 
 1. Komputer
 2. Cisco Packet Tracer
-3. Cisco Skills for All / Akun Cisco NetAcad
+3. Akun [Cisco Skills for All](https://skillsforall.com/) / [Cisco NetAcad](https://www.netacad.com/)
 
 ## Perintah CLI
 

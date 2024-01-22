@@ -15,7 +15,7 @@ Langkah konfigurasi dalam melakukan routing statis adalah sebagai berikut
 
 1. Konfigurasi alamat IP pada interface
 1. Aktivasi interface pada perangkat router (secara default status DOWN)
-1. Penentuan jalur pada routing statisdengan 3 cara antara lain
+1. Penentuan jalur pada routing statis dengan 3 cara antara lain
    1. Menggunakan exit interface
    2. Menggunakan next-hop IP address
    3. Menggunakan exit interface dan next-hop IP address sekaligus
@@ -24,15 +24,45 @@ Langkah konfigurasi dalam melakukan routing statis adalah sebagai berikut
 
 1. Komputer
 2. Cisco Packet Tracer
-3. Cisco Skills for All / Akun Cisco NetAcad
+3. Akun [Cisco Skills for All](https://skillsforall.com/) / [Cisco NetAcad](https://www.netacad.com/)
 
 ## Perintah CLI
 
-| Perintah                                                                   | Deskripsi                                                                                               |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Router(config)# ip route `destination_network` `subnet_mask` `next_hop_ip` | Menambahkan rute statis ke routing table                                                                |
-| Router# show ip route                                                      | Menampilkan informasi routing table                                                                     |
-| Router# traceroute `ip_address`                                            | Menampilkan informasi pelacakan jalur paket data yang dikirimkan melalui jaringan dari sumber ke tujuan |
+Perintah CLI yang digunakan pada praktikum kali ini yaitu:
+
+1. `Router(config)# ip route destination_network subnet_mask next_hop_ip`
+
+   Digunakan untuk mengonfigurasi static route di router, menambahkan informasi tentang jaringan tujuan tersebut ke dalam tabel routing router.
+
+   1. `destination_network` adalah jaringan tujuan yang ingin diarahkan.
+   2. `subnet_mask` adalah subnet mask dari jaringan tujuan.
+   3. `next_hop_ip` adalah alamat IP dari next-hop router yang akan digunakan untuk mencapai jaringan tujuan.
+
+   Contoh penggunaan:
+
+   Router(config)# ip route 192.168.2.0 255.255.255.0 10.1.1.1
+
+   artinya semua paket yang menuju ke jaringan 192.168.2.0 akan diarahkan melalui next-hop IP 10.1.1.1.
+
+1. `Router# show ip route`
+
+   Digunakan untuk menampilkan tabel routing pada router. Memberikan informasi tentang rute yang diketahui oleh router, termasuk rute statis dan dinamis. Berguna untuk memeriksa apakah rute-rute telah dikonfigurasi dengan benar.
+
+   Contoh penggunaan:
+
+   Router0# show ip route
+
+   akan menampilkan informasi tentang rute-rute yang diketahui oleh perangkat Router0.
+
+1. `Router# traceroute ip_address`
+
+   Digunakan untuk melacak jalur paket menuju alamat IP tertentu. Memberikan informasi tentang semua router (hop) yang dilewati oleh paket dalam perjalanan menuju tujuan. Berguna untuk memahami jalur paket melalui jaringan dan mengidentifikasi potensi masalah atau bottleneck.
+
+   Contoh penggunaan:
+
+   Router# traceroute 8.8.8.8
+
+   akan melacak jalur paket ke alamat IP 8.8.8.8 dan menunjukkan semua hop yang dilalui.
 
 ## Langkah Kerja
 
