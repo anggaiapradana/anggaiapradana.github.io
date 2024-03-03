@@ -611,6 +611,6 @@ Sebagai bahan latihan, lakukan konfigurasi redistribution routing dengan topolog
 
 Topologi jaringan dapat diunduh [di sini](/assets/pkt/2023-03-12-konfigurasi-redistribution-routing-pada-cisco-packet-tracer/redistribution_routing_dinamis_latihan.pka){:target="\_blank"}.
 
-Pengujian jaringan terkonfigurasi dapat dilakukan sebagai berikut:
+Pengujian jaringan terkonfigurasi dapat dilakukan dengan upload dan download file via FTP server sebagai berikut:
 
 {% include embed/youtube.html id='RF5v2v27qOg' %}
