@@ -1,2 +1,1 @@
 # anggaiapradana.github.io
-# yeay
