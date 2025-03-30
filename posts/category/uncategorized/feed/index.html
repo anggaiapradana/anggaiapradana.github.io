@@ -12,7 +12,7 @@
 	<atom:link href="https://anggaiapradana.github.io/posts/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
 	<link>https://anggaiapradana.github.io/</link>
 	<description>Practice does not make perfect but improvement.</description>
-	<lastBuildDate>Wed, 26 Mar 2025 04:45:43 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 30 Mar 2025 07:01:52 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,238 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.7.2</generator>
 	<item>
+		<title>OSI Layers sebagai Standarisasi Jaringan Komputer</title>
+		<link>https://anggaiapradana.github.io/posts/osi-layers-sebagai-standarisasi-jaringan-komputer/</link>
+					<comments>https://anggaiapradana.github.io/posts/osi-layers-sebagai-standarisasi-jaringan-komputer/#respond</comments>
+		
+		<dc:creator><![CDATA[angga]]></dc:creator>
+		<pubDate>Sun, 30 Mar 2025 06:46:30 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://anggaiapradana.github.io/?p=29</guid>
+
+					<description><![CDATA[Halo, teman-teman! Kali ini, kita akan membahas sesuatu yang sangat penting dalam dunia jaringan komputer, yaitu Lapisan OSI (Open Systems Interconnection). Mungkin kalian sudah pernah dengar istilah ini, tapi apa sih sebenarnya Lapisan OSI itu? Mengapa kita perlu memahaminya? Yuk, kita bahas bersama. Apa Itu Lapisan OSI? Lapisan OSI adalah sebuah kerangka kerja yang dikembangkan [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>Halo, teman-teman! Kali ini, kita akan membahas sesuatu yang sangat penting dalam dunia jaringan komputer, yaitu Lapisan OSI (Open Systems Interconnection). Mungkin kalian sudah pernah dengar istilah ini, tapi apa sih sebenarnya Lapisan OSI itu? Mengapa kita perlu memahaminya? Yuk, kita bahas bersama.</p>
+
+
+
+<h2 class="wp-block-heading">Apa Itu Lapisan OSI?</h2>
+
+
+
+<p>Lapisan OSI adalah sebuah kerangka kerja yang dikembangkan oleh ISO (International Organization for Standardization). Fungsinya? Membantu kita memahami cara kerja jaringan komputer dengan cara yang terstruktur. Bayangkan Lapisan OSI ini seperti panduan langkah-langkah dalam membuat sesuatu—misalnya, resep masakan. Setiap langkah punya peran sendiri, tapi semuanya saling mendukung untuk mencapai tujuan akhir. Dalam konteks ini, &#8220;langkah-langkah&#8221; itu disebut lapisan, dan ada tujuh lapisan yang akan kita pelajari.</p>
+
+
+
+<p>Tujuan utamanya adalah untuk menstandarkan komunikasi antar perangkat jaringan, terutama yang dibuat oleh vendor berbeda, seperti Cisco, TP-Link, atau lainnya. Dulu, sebelum ada standar seperti OSI, setiap vendor punya cara sendiri untuk mengirim data. Akibatnya, perangkat dari vendor berbeda sulit &#8220;berkomunikasi&#8221;. Nah, Lapisan OSI hadir sebagai solusi, memberikan panduan jelas tentang tugas masing-masing tahap dalam proses pengiriman data.</p>
+
+
+
+<h2 class="wp-block-heading">Kenapa Standarisasi Penting?</h2>
+
+
+
+<p>Coba bayangkan kalau semua orang bicara dengan bahasa yang beda-beda tanpa ada kamus universal—pasti kacau, kan? Dalam jaringan komputer, protokol adalah &#8220;bahasa&#8221; yang dipakai perangkat untuk saling paham. Sebelum ada Lapisan OSI, setiap vendor bikin protokol sendiri, sehingga jaringan jadi berantakan dan sulit dikelola. Dengan adanya Lapisan OSI, semua jadi lebih teratur. Ini ibarat kamus yang memastikan semua perangkat bisa &#8220;ngobrol&#8221; dengan bahasa yang sama, sehingga komunikasi jadi lebih efisien dan mudah dipahami.</p>
+
+
+
+<h2 class="wp-block-heading">Mengenal Tujuh Lapisan OSI</h2>
+
+
+
+<p>Sekarang, kita masuk ke bagian inti: tujuh lapisan OSI. Biar gampang dipahami, saya akan jelaskan satu per satu dengan analogi sederhana dan contoh perangkat atau layanan di setiap lapisan. Yuk, simak!</p>
+
+
+
+<p>1. Lapisan Fisik (Physical Layer)</p>
+
+
+
+<p>Ini adalah &#8220;pondasi&#8221; jaringan. Lapisan ini mengurus hal-hal fisik seperti kabel, sinyal listrik, atau gelombang radio yang membawa data. Bayangkan ini seperti jalan raya tempat data &#8220;berjalan&#8221;. Contohnya:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Kabel UTP (yang sering dipakai untuk internet)</li>
+
+
+
+<li>Kabel serat optik</li>
+
+
+
+<li>Hub (alat sederhana untuk mendistribusikan sinyal)</li>
+</ul>
+
+
+
+<p>2. Lapisan Data Link (Data Link Layer)</p>
+
+
+
+<p>Lapisan ini memastikan data yang dikirim lewat media fisik sampai dengan aman. Data diubah jadi frame dan dicek kalau ada kesalahan. Analoginya, ini seperti petugas pos yang memastikan paket sudah dikemas rapi sebelum dikirim. Contohnya:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Switch (mengarahkan data ke tujuan yang tepat)</li>
+
+
+
+<li>MAC Address (alamat unik tiap perangkat)</li>
+
+
+
+<li>Ethernet (standar untuk jaringan lokal)</li>
+</ul>
+
+
+
+<p>3. Lapisan Jaringan (Network Layer)</p>
+
+
+
+<p>Di sini, data diatur untuk berpindah dari satu jaringan ke jaringan lain. Lapisan ini menentukan jalur terbaik, mirip seperti GPS yang mencari rute tercepat. Contohnya:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Router (menghubungkan jaringan berbeda)</li>
+
+
+
+<li>IP Address (alamat unik di internet)</li>
+
+
+
+<li>Protokol routing (contoh: OSPF atau BGP)</li>
+</ul>
+
+
+
+<p>4. Lapisan Transport (Transport Layer)</p>
+
+
+
+<p>Lapisan ini memastikan data sampai dengan utuh dan urut. Ia juga mengatur kecepatan pengiriman supaya tidak overload. Bayangkan ini seperti kurir yang mengantarkan paket tepat waktu dan dalam kondisi baik. Contohnya:</p>
+
+
+
+<ul class="wp-block-list">
+<li>TCP (pengiriman data yang andal)</li>
+
+
+
+<li>UDP (lebih cepat tapi kurang andal)</li>
+
+
+
+<li>Port number (menentukan aplikasi penerima data)</li>
+</ul>
+
+
+
+<p>5. Lapisan Sesi (Session Layer)</p>
+
+
+
+<p>Lapisan ini mengendalikan &#8220;percakapan&#8221; antar perangkat—kapan mulai, jeda, atau selesai. Analoginya, ini seperti moderator yang mengatur jalannya rapat. Contohnya:</p>
+
+
+
+<ul class="wp-block-list">
+<li>API (memungkinkan aplikasi berkomunikasi)</li>
+
+
+
+<li>RPC (Remote Procedure Call)</li>
+
+
+
+<li>Sockets</li>
+</ul>
+
+
+
+<p>6. Lapisan Presentasi (Presentation Layer)</p>
+
+
+
+<p>Tugasnya &#8220;menerjemahkan&#8221; data supaya bisa dipahami penerima, termasuk mengenkripsi atau mengompresi data. Ini mirip penerjemah yang memastikan pesan sampai dalam bahasa yang tepat. Contohnya:</p>
+
+
+
+<ul class="wp-block-list">
+<li>Enkripsi/dekripsi data</li>
+
+
+
+<li>Kompresi data</li>
+
+
+
+<li>Format seperti JPEG atau ASCII</li>
+</ul>
+
+
+
+<p>7. Lapisan Aplikasi (Application Layer)</p>
+
+
+
+<p>Lapisan paling atas ini adalah yang paling dekat dengan kita sebagai pengguna. Ia menyediakan layanan yang kita pakai sehari-hari. Bayangkan ini seperti resepsionis yang menerima permintaan kita. Contohnya:</p>
+
+
+
+<ul class="wp-block-list">
+<li>HTTP (untuk browsing)</li>
+
+
+
+<li>FTP (untuk transfer file)</li>
+
+
+
+<li>SMTP (untuk kirim email)</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Tips Mengingat Lapisan OSI</h2>
+
+
+
+<p>Biar gampang hafal, pakai kalimat lucu ini: </p>
+
+
+
+<ol class="wp-block-list">
+<li>Dari lapisan 1 ke 7: &#8220;Please Do Not Throw Sausage Pizza Away&#8221; (Physical, Data Link, Network, Transport, Session, Presentation, Application)</li>
+
+
+
+<li>Dari lapisan 7 ke 1: &#8220;Anak Pak Soleh Tidak Nakal Dan Pintar&#8221; (Application, Presentation, Session, Transport, Network, Data Link, Physical)</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">Penutup</h2>
+
+
+
+<p>Itulah sekilas tentang Lapisan OSI dan mengapa ia jadi standar penting dalam jaringan komputer. Semoga penjelasan ini, lengkap dengan analogi dan contoh, bisa membantu kalian memahami setiap lapisan dengan lebih mudah. Kalau ada yang masih bingung atau mau tanya lebih lanjut, jangan ragu untuk komentar, ya!</p>
+
+
+
+<p>Salam,<br>Angga.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://anggaiapradana.github.io/posts/osi-layers-sebagai-standarisasi-jaringan-komputer/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
 		<title>Instalasi GNS3 dengan GNS3 VM di VirtualBox sebagai Server Utama</title>
 		<link>https://anggaiapradana.github.io/posts/instalasi-gns3-dengan-gns3-vm-di-virtualbox-sebagai-server-utama/</link>
 					<comments>https://anggaiapradana.github.io/posts/instalasi-gns3-dengan-gns3-vm-di-virtualbox-sebagai-server-utama/#respond</comments>
@@ -116,21 +348,37 @@
 		
 			</item>
 		<item>
-		<title>Hello world!</title>
-		<link>https://anggaiapradana.github.io/posts/hello-world/</link>
-					<comments>https://anggaiapradana.github.io/posts/hello-world/#comments</comments>
+		<title>Selamat Datang di Life is My Campus: Belajar dan Berbagi tentang Jaringan Komputer</title>
+		<link>https://anggaiapradana.github.io/posts/selamat-datang/</link>
+					<comments>https://anggaiapradana.github.io/posts/selamat-datang/#comments</comments>
 		
 		<dc:creator><![CDATA[angga]]></dc:creator>
 		<pubDate>Tue, 25 Mar 2025 07:35:42 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
 		<guid isPermaLink="false">https://anggaiapradana.github.io/?p=1</guid>
 
-					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
+					<description><![CDATA[Halo, teman-teman semua! Perkenalkan, nama saya Angga Indra Adi Pradana, atau biasa dipanggil Angga. Senang sekali bisa bertemu dengan kalian melalui blog pribadi saya, Life is My Campus, yang bisa kalian kunjungi di https://lifeismycampus.com. Blog ini hadir dengan jargon favorit saya: “Practice doesn’t make perfect but improvement”, yang artinya latihan mungkin tidak membuat kita menjadi [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+<p>Halo, teman-teman semua! Perkenalkan, nama saya Angga Indra Adi Pradana, atau biasa dipanggil Angga. Senang sekali bisa bertemu dengan kalian melalui blog pribadi saya, Life is My Campus, yang bisa kalian kunjungi di <a href="https://lifeismycampus.com" target="_blank" rel="noreferrer noopener">https://lifeismycampus.com</a>. Blog ini hadir dengan jargon favorit saya: <em>“Practice doesn’t make perfect but improvement”</em>, yang artinya latihan mungkin tidak membuat kita menjadi sempurna, tapi pasti bisa membuat kita menjadi lebih baik dari sebelumnya.</p>
+
+
+
+<p>Saya adalah seorang pengajar di SMK dengan fokus pada kompetensi keahlian Teknik Komputer dan Jaringan. Salah satu materi yang saya ajarkan adalah jaringan komputer. Blog ini saya jadikan sebagai tempat untuk mencatat berbagai hal yang sedang saya pelajari, sudah saya pahami, dan masih harus saya pelajari tentang konsep serta konfigurasi perangkat jaringan komputer. Catatan-catatan ini nantinya akan saya bagikan kepada murid-murid saya, bahkan kepada siapa saja yang tertarik, dalam bentuk tutorial jaringan komputer, penjelasan materi, soal-soal, jobsheet, panduan konfigurasi, serta berbagai berkas yang bisa diunduh.</p>
+
+
+
+<p>Saya berharap blog ini bisa menjadi penyemangat bagi saya untuk terus belajar jaringan komputer dan berbagi pengetahuan, terutama di bidang komputer dan jaringan. Jika kalian punya pertanyaan, kritik, saran, atau masukan agar blog ini dan isi yang saya sajikan menjadi lebih baik, jangan sungkan untuk menghubungi saya. Kalian bisa meninggalkan komentar atau mengirim pesan melalui halaman kontak yang sudah tersedia.</p>
+
+
+
+<p>Saya merasa sangat tersanjung atas kunjungan kalian ke blog ini. Terima kasih banyak! Semoga kalian menemukan sesuatu yang bermanfaat di sini, baik untuk menambah wawasan maupun sebagai bahan belajar.</p>
+
+
+
+<p>Salam hangat,<br>Angga.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>https://anggaiapradana.github.io/posts/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>https://anggaiapradana.github.io/posts/selamat-datang/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
